@@ -1,0 +1,122 @@
+.hero {
+
+    .carousel-control {
+        display: none;
+    }
+
+    .carousel-indicators {
+        bottom: -100px;
+
+        li {
+            border: 0 none;
+            background: $champagne;
+            margin: 0 3px;
+            position: relative;
+            width: 13px;
+            height: 13px;
+
+            &:first-child:before,
+            &:last-child:before {
+                content: " ";
+                display: block;
+                position: absolute;
+                width: 40px;
+                height: 11px;
+                cursor: default;
+                background: url(../img/heroIndicator--sprite.svg);
+            }
+
+            &:first-child:before {
+                left: -50px;
+            }
+
+             &:last-child:before {
+                background-position: -41px 0;
+                right: -50px;
+            }
+
+        }
+
+        .active {
+            width: 13px;
+            height: 13px;
+            background: $gray;
+        }
+
+    }
+
+    &__footer {
+        position: relative;
+
+        &:before {
+            content: " ";
+            height: 2px;
+            width: 100%;
+            background: $champagne;
+            position: absolute;
+            top: -4px;
+            left: 0;
+        }
+
+        background: $mint;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 45px;
+
+        h1 {
+            font-family: $font-display;
+            font-size: 42px;
+            margin: 0;
+        }
+    }
+}
+
+.announce {
+    background: $champagne;
+    padding: 50px 0;
+
+    &Main {
+        background-image: url(../img/heart.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        text-align: center;
+        height: 726px;
+        padding-top: 235px;
+
+        [class^="announceMain__text"] {
+            margin-bottom: 25px;
+        }
+
+        .announceMain__text {
+            &--line1 {
+                // font-size: 18px;
+                font-size: em(18);
+                margin-bottom: 10px;
+            }
+
+            &--line2 {
+                font-size: 40px;
+                font-weight: 700;
+            }
+
+            &--line3,
+            &--line4,
+            &--line5 {
+                font-size: 26px;
+            }
+
+        }
+    }
+}
+
+.parallax {
+    height: 315px;
+    background: url(../img/parallax.jpg);
+    background-attachment: fixed;
+}
+
+.spacer {
+    height: 900px;
+    background: $blush;
+}
