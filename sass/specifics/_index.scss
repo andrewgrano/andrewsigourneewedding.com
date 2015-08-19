@@ -73,7 +73,9 @@
 
 .announce {
     background: $champagne;
-    padding: 50px 0;
+    padding: 50px 0 250px;
+    position: relative;
+    z-index: 2;
 
     &Main {
         background-image: url(../img/heart.svg);
@@ -83,6 +85,16 @@
         text-align: center;
         height: 726px;
         padding-top: 235px;
+
+        &__cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            background: $champagne;
+        }
 
         [class^="announceMain__text"] {
             margin-bottom: 25px;
@@ -111,12 +123,54 @@
 }
 
 .parallax {
-    height: 315px;
     background: url(../img/parallax.jpg);
     background-attachment: fixed;
+    background-size:100%;
+    text-align: center;
+    position: relative;
+    height: 500px;
+    width: 100%;
+
+    @media(max-width:900px) {
+        background-size:200px;
+    }
+
+    // a.btn-parallax {
+    //     font-family: $font-display;
+    //     font-size: 36px;
+    //     font-weight: 700;
+    //     border: 3px solid;
+    //     color: $white;
+    //     position: relative;
+    //     top: 100px;
+    //     z-index: 1;
+    // }
+
+    .parallax__buttonWrapper {
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    a.btn-parallax {
+        font-family: $font-display;
+        font-size: 36px;
+        font-weight: 700;
+        border: 3px solid;
+        color: $white;
+        position: absolute;
+        top: 220px;
+        left: 25%;
+        width: 50%;
+        z-index: 1;
+    }
 }
+
+
 
 .spacer {
     height: 900px;
     background: $blush;
+    position: relative;
+    z-index: 2;
 }
