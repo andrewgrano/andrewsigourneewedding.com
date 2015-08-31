@@ -5744,10 +5744,39 @@ body {
     width: 50%;
     z-index: 1; }
 
-.spacer {
-  height: 900px;
-  background: #FFE3E7;
+.story {
+  background: #FFC9B0;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  text-align: center;
+  padding: 150px 0; }
+  .story__heading {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700; }
+    .story__heading img {
+      width: 350px; }
+  .story__content {
+    margin-top: 75px;
+    font-size: 24px; }
+    .story__content p {
+      margin-bottom: 50px; }
+  .story__footerImg {
+    width: 250px; }
+
+.spacer {
+  height: 800px; }
+
+.engagementPhotos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background: #FFE3E7; }
+  .engagementPhotos div {
+    flex: auto;
+    width: 25%; }
+    .engagementPhotos div:nth-child(4n+2) {
+      flex-grow: 2;
+      width: 50%; }
 
 /*# sourceMappingURL=styles.css.map */

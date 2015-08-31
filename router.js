@@ -5,11 +5,15 @@ var bodyParser = require("body-parser");
 router.use(bodyParser.urlencoded({ extended: true }));
 
 router.get('/', function(req, res) {
-    res.render("index", { title: "Hello Node!" });
+    res.render("index", { title: "Andrew and Sigournee are Getting Married!" });
 });
 
-router.get('/about', function(req, res) {  
-    res.render('about/about', { title: "About" });
+// router.get('/about', function(req, res) {
+//     res.render('about/about', { title: "About" });
+// });
+
+router.get('/engagement-photos', function(req, res) {
+    res.render('engagement-photos', { title: "Engagement Photos : Andrew and Sigournee" });
 });
 
 router.use(function(req, res){

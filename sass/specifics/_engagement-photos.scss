@@ -1,0 +1,16 @@
+.engagementPhotos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: $blush;
+
+    div {
+        flex: auto;
+        width: 25%;
+
+        &:nth-child(4n+2) {
+            flex-grow:2;
+            width: 50%;
+        }
+    }
+}
