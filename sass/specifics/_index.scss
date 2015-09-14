@@ -1,11 +1,31 @@
 .hero {
 
+    .carousel-inner {
+        img {
+            @media screen and (min-width: 1400px) {
+                width: 100%;
+            }
+        }
+    }
+
     .carousel-control {
         display: none;
     }
 
     .carousel-indicators {
         bottom: -100px;
+
+        @media screen and (max-width: $screen-sm-max) {
+            bottom: -85px;
+        }
+
+        @media screen and (max-width: $screen-xs-max) {
+            bottom: -80px;
+        }
+
+        @media screen and (max-width: $screen-xs-min) {
+            bottom: -72px;
+        }
 
         li {
             border: 0 none;
@@ -24,6 +44,10 @@
                 height: 11px;
                 cursor: default;
                 background: url(../img/heroIndicator--sprite.svg);
+
+                @media screen and (max-width: $screen-sm-max) {
+                    margin-top: 5px;
+                }
             }
 
             &:first-child:before {
@@ -63,19 +87,44 @@
         padding-top: 10px;
         padding-bottom: 45px;
 
+        @media screen and (max-width: $screen-sm-max) {
+            padding-bottom: 35px;
+        }
+
         h1 {
             font-family: $font-display;
             font-size: 42px;
             margin: 0;
+
+            @media screen and (max-width: $screen-sm-max) {
+                font-size: 36px;
+            }
+
+            @media screen and (max-width: $screen-xs-max) {
+                font-size: 30px;
+            }
+
+            @media screen and (max-width: $screen-xs-min) {
+                font-size: 25px;
+            }
         }
     }
 }
 
+
 .announce {
     background: $champagne;
-    padding: 50px 0 250px;
+    padding: 50px 0 175px;
     position: relative;
     z-index: 2;
+
+    @media screen and (max-width: $screen-md-max) {
+        padding-bottom: 125px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+        padding-bottom: 75px;
+    }
 
     &Main {
         background-image: url(../img/heart.svg);
@@ -84,7 +133,29 @@
         position: relative;
         text-align: center;
         height: 726px;
-        padding-top: 235px;
+        font-size: 1em;
+
+        @media screen and (max-width: $screen-md-max) {
+            font-size: 0.8em;
+            height: 600px
+        }
+
+        @media screen and (max-width: $screen-sm-max) {
+            height: 580;
+        }
+
+        @media screen and (max-width: $screen-xs-max) {
+            font-size: 0.6em;
+            background-size: 392px;
+            background-position: top center;
+            height: 385px;
+        }
+
+        @media screen and (max-width: $screen-xs-min) {
+            background-size: 290px;
+            height: 285px;
+            font-size: 0.51em;
+        }
 
         &__cover {
             position: absolute;
@@ -98,24 +169,54 @@
 
         [class^="announceMain__text"] {
             margin-bottom: 25px;
+
+            @media screen and (max-width: $screen-xs-max) {
+                margin-bottom: 15px;
+                padding-left: 10px;
+            }
+
+            @media screen and (max-width: $screen-xs-min) {
+                margin-bottom: 10px;
+                padding-left: 5px;
+            }
         }
 
         .announceMain__text {
+
             &--line1 {
-                // font-size: 18px;
-                font-size: em(18);
+                font-size: em(20);
                 margin-bottom: 10px;
+                padding-top: 235px;
+
+                @media screen and (max-width: $screen-md-max) {
+                    padding-top: 195px;
+                }
+
+                @media screen and (max-width: $screen-sm-max) {
+                    padding-top: 190px;
+                }
+
+                @media screen and (max-width: $screen-xs-max) {
+                    padding-top: 125px;
+                    margin-bottom: 7px;
+                }
+
+                @media screen and (max-width: $screen-xs-min) {
+                    padding-top: 88px;
+                    margin-bottom: 5px;
+                }
+
             }
 
             &--line2 {
-                font-size: 40px;
+                font-size: em(40);
                 font-weight: 700;
             }
 
             &--line3,
             &--line4,
             &--line5 {
-                font-size: 26px;
+                font-size: em(26);
             }
 
         }
@@ -124,15 +225,29 @@
 
 .parallax {
     background: url(../img/parallax.jpg);
-    background-attachment: fixed;
+    // background-attachment: fixed;
     background-size:100%;
+    background-repeat: no-repeat;
+    background-color: $mint;
     text-align: center;
     position: relative;
     height: 500px;
     width: 100%;
 
     @media(max-width:900px) {
-        background-size:200px;
+        background-size: 200px;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+        height: 422px;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+        height: 303px;
+    }
+
+    @media screen and (max-width: $screen-xs-min) {
+        height: 205px;
     }
 
     // a.btn-parallax {
@@ -152,17 +267,56 @@
         width: 100%;
     }
 
+    .btn-parallax-container {
+        position: absolute;
+        top: 220px;
+        width: 100%;
+        z-index: 1;
+
+        @media screen and (max-width: $screen-xs-max) {
+            top: 150px;
+        }
+
+        @media screen and (max-width: $screen-xs-min) {
+            top: 80px;
+        }
+    }
+
     a.btn-parallax {
         font-family: $font-display;
         font-size: 36px;
         font-weight: 700;
         border: 3px solid;
         color: $white;
-        position: absolute;
-        top: 220px;
-        left: 25%;
-        width: 50%;
-        z-index: 1;
+        font-weight: 400;
+        @include transition-property(background-color);
+        @include transition-duration(0.4s);
+        @include transition-timing-function(linear);
+
+        @media screen and (max-width: $screen-sm-max) {
+            font-size: 29px;
+        }
+
+        @media screen and (max-width: $screen-xs-max) {
+            font-size: 24px;
+        }
+
+
+        @media screen and (max-width: $screen-xs-min) {
+            font-size: 18px;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: $gray;
+        }
+
+        .glyphicon {
+            font-size: 0.85em;
+            position: relative;
+            top: 0.08em;
+        }
     }
 }
 
@@ -175,27 +329,84 @@
     text-align: center;
     padding: 150px 0;
 
+    @media screen and (max-width: $screen-sm-max) {
+        padding: 75px 0;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+        padding: 50px 0;
+    }
+
     &__heading {
         margin: 0;
         font-size: 40px;
-        font-weight: 700;
+        color: $champagne;
+
+        @media screen and (max-width: $screen-sm-max) {
+            font-size: 32px;
+        }
+
+        @media screen and (max-width: $screen-xs-max) {
+            font-size: 25px;
+        }
 
         & img {
             width: 350px;
+
+            @media screen and (max-width: $screen-sm-max) {
+                width: 300px;
+            }
+
+            @media screen and (max-width: $screen-xs-max) {
+                width: 200px;
+            }
         }
     }
 
     &__content {
         margin-top: 75px;
-        font-size: 24px;
+        font-size: 22px;
+        padding: 0 5%;
+
+        @media screen and (max-width: $screen-md-max) {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: $screen-sm-max) {
+            font-size: 18px;
+            margin-top: 50px;
+        }
+
+        @media screen and (max-width: $screen-xs-max) {
+            padding: 0;
+            font-size: 16px;
+            margin-top: 35px;
+        }
+
 
         p {
             margin-bottom: 50px;
+
+            @media screen and (max-width: $screen-sm-max) {
+                margin-bottom: 30px;
+            }
+
+            @media screen and (max-width: $screen-xs-max) {
+                margin-bottom: 25px;
+            }
         }
     }
 
     &__footerImg {
         width: 250px;
+
+        @media screen and (max-width: $screen-sm-max) {
+            width: 200px;
+        }
+
+        @media screen and (max-width: $screen-xs-max) {
+            width: 150px;
+        }
     }
 }
 

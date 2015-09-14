@@ -10,9 +10,10 @@
 
 </head>
 <body>
-    <div class="intro">
-        These photos were taken in Venice durring our recent trip to Italy in May 2015.<br>
-        They were taken by <a href="http://rondinapaolo.wix.com/photography" target="paolo">Paolo Rondina</a> of <a href="http://www.ciclopeproductions.com/" target="ciclope">Ciclope Productions</a>.
+    <div class="engagementPhotos__intro">
+        <h1>Our Engagement Photos</h1>
+        These photos were taken in Venice durring our recent trip to Italy in May, soon after we got engaged.<br>
+        Thanks to <a href="http://rondinapaolo.wix.com/photography" target="paolo">Paolo Rondina</a> of <a href="http://www.ciclopeproductions.com/" target="ciclope">Ciclope Productions</a> for taking all of the photos and showing us around Venice!
     </div>
     <!-- 23 and 16 are tall -->
     <section class="engagementPhotos">
@@ -250,6 +251,17 @@
                 }
                 e.preventDefault(); // prevent the default action (scroll / move caret)
             };
+
+
+
+            $( ".thumb" ).hover(
+              function() {
+                $(this).parent().append( $( "<span>Click to Expand</span>" ) );
+              }, function() {
+                $( this ).parent().find( "span:last" ).remove();
+              }
+            );
+
 
         });
 
