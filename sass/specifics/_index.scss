@@ -283,15 +283,7 @@
     }
 
     a.btn-parallax {
-        font-family: $font-display;
         font-size: 36px;
-        font-weight: 700;
-        border: 3px solid;
-        color: $white;
-        font-weight: 400;
-        @include transition-property(background-color);
-        @include transition-duration(0.4s);
-        @include transition-timing-function(linear);
 
         @media screen and (max-width: $screen-sm-max) {
             font-size: 29px;
@@ -304,18 +296,6 @@
 
         @media screen and (max-width: $screen-xs-min) {
             font-size: 18px;
-        }
-
-        &:hover,
-        &:active,
-        &:focus {
-            background-color: $gray;
-        }
-
-        .glyphicon {
-            font-size: 0.85em;
-            position: relative;
-            top: 0.08em;
         }
     }
 }

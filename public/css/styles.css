@@ -8601,6 +8601,42 @@ body {
   z-index: 2;
 }
 
+/* line 1, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_buttons.scss */
+.btn-ghost,
+.btn.btn-ghost {
+  color: #fff;
+  font-family: "Patua One", cursive;
+  font-weight: 400;
+  border: 3px solid;
+  -moz-transition-property: background-color;
+  -o-transition-property: background-color;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+/* line 11, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_buttons.scss */
+.btn-ghost:hover, .btn-ghost:active, .btn-ghost:focus,
+.btn.btn-ghost:hover,
+.btn.btn-ghost:active,
+.btn.btn-ghost:focus {
+  color: #fff;
+  background-color: #BABABA;
+}
+/* line 18, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_buttons.scss */
+.btn-ghost .glyphicon,
+.btn.btn-ghost .glyphicon {
+  font-size: 0.85em;
+  position: relative;
+  top: 0.08em;
+}
+
 @media screen and (min-width: 1400px) {
   /* line 4, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .hero .carousel-inner img {
@@ -8913,24 +8949,7 @@ body {
 }
 /* line 285, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .parallax a.btn-parallax {
-  font-family: "Patua One", cursive;
   font-size: 36px;
-  font-weight: 700;
-  border: 3px solid;
-  color: #fff;
-  font-weight: 400;
-  -moz-transition-property: background-color;
-  -o-transition-property: background-color;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -moz-transition-duration: 0.4s;
-  -o-transition-duration: 0.4s;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  -moz-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  -webkit-transition-timing-function: linear;
-  transition-timing-function: linear;
 }
 @media screen and (max-width: 991px) {
   /* line 285, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
@@ -8950,18 +8969,8 @@ body {
     font-size: 18px;
   }
 }
-/* line 309, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
-.parallax a.btn-parallax:hover, .parallax a.btn-parallax:active, .parallax a.btn-parallax:focus {
-  background-color: #BABABA;
-}
-/* line 315, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
-.parallax a.btn-parallax .glyphicon {
-  font-size: 0.85em;
-  position: relative;
-  top: 0.08em;
-}
 
-/* line 325, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 305, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .story {
   background: #FFC9B0;
   position: relative;
@@ -8970,187 +8979,233 @@ body {
   padding: 150px 0;
 }
 @media screen and (max-width: 991px) {
-  /* line 325, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 305, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story {
     padding: 75px 0;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 325, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 305, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story {
     padding: 50px 0;
   }
 }
-/* line 340, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 320, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .story__heading {
   margin: 0;
   font-size: 40px;
   color: #FDFCF3;
 }
 @media screen and (max-width: 991px) {
-  /* line 340, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 320, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story__heading {
     font-size: 32px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 340, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 320, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story__heading {
     font-size: 25px;
   }
 }
-/* line 353, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 333, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .story__heading img {
   width: 350px;
 }
 @media screen and (max-width: 991px) {
-  /* line 353, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 333, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story__heading img {
     width: 300px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 353, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 333, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story__heading img {
     width: 200px;
   }
 }
-/* line 366, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 346, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .story__content {
   margin-top: 75px;
   font-size: 22px;
   padding: 0 5%;
 }
 @media screen and (max-width: 1199px) {
-  /* line 366, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 346, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story__content {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 991px) {
-  /* line 366, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 346, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story__content {
     font-size: 18px;
     margin-top: 50px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 366, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 346, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story__content {
     padding: 0;
     font-size: 16px;
     margin-top: 35px;
   }
 }
-/* line 387, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 367, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .story__content p {
   margin-bottom: 50px;
 }
 @media screen and (max-width: 991px) {
-  /* line 387, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 367, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story__content p {
     margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 387, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 367, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story__content p {
     margin-bottom: 25px;
   }
 }
-/* line 400, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 380, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .story__footerImg {
   width: 250px;
 }
 @media screen and (max-width: 991px) {
-  /* line 400, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 380, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story__footerImg {
     width: 200px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 400, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 380, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story__footerImg {
     width: 150px;
   }
 }
 
-/* line 414, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 394, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .spacer {
   height: 800px;
 }
 
-/* line 1, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
-.engagementPhotos__intro {
-  background: #FDFCF3;
-  padding: 35px 0;
-  text-align: center;
-  color: #666;
-  font-size: 18px;
-  line-height: 1.75;
-  position: fixed;
-  height: 203px;
-  width: 100%;
-  z-index: 992;
-}
-/* line 15, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
-.engagementPhotos__intro h1 {
-  font-family: "Patua One", cursive;
-  font-size: 42px;
-  margin: 0 0 20px 0;
-}
-
-/* line 22, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+/* line 2, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
 .engagementPhotos {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   padding: 50px;
-  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzI5NTMyIiB5MT0iMS4wOTQ0OTIiIHgyPSIwLjY3MDQ2OCIgeTI9Ii0wLjA5NDQ5MiI+PHN0b3Agb2Zmc2V0PSIzOCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC41Ii8+PHN0b3Agb2Zmc2V0PSIzOCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9Ii0wLjEwMzA2OSIgeTE9IjAuNzMxNDk2IiB4Mj0iMS4xMDMwNjkiIHkyPSIwLjI2ODUwNCI+PHN0b3Agb2Zmc2V0PSI5OCUiIHN0b3AtY29sb3I9IiNmZGRiZGYiIHN0b3Atb3BhY2l0eT0iMC41Ii8+PHN0b3Agb2Zmc2V0PSI5OCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMjE5MTg2IiB5MT0iMS4xMDIyMDgiIHgyPSIwLjc4MDgxNCIgeTI9Ii0wLjEwMjIwOCI+PHN0b3Agb2Zmc2V0PSIxOCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC41Ii8+PHN0b3Agb2Zmc2V0PSIxOCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iMS4wOTE1MDYiIHgyPSIwLjY1ODQ5NCIgeTI9Ii0wLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSI0OSUiIHN0b3AtY29sb3I9IiNmZWRmZTQiIHN0b3Atb3BhY2l0eT0iMC41Ii8+PHN0b3Agb2Zmc2V0PSI0OSUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMDU3NDQxIiB5MT0iMS4wNDY1MTUiIHgyPSIwLjk0MjU1OSIgeTI9Ii0wLjA0NjUxNSI+PHN0b3Agb2Zmc2V0PSIyMyUiIHN0b3AtY29sb3I9IiNmZmM5ZDEiIHN0b3Atb3BhY2l0eT0iMC41Ii8+PHN0b3Agb2Zmc2V0PSIyMyUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9Ii0wLjEwMjIwOCIgeTE9IjAuNzE5MTg2IiB4Mj0iMS4xMDIyMDgiIHkyPSIwLjI4MDgxNCI+PHN0b3Agb2Zmc2V0PSIyMyUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC41Ii8+PHN0b3Agb2Zmc2V0PSIyMyUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9Ii0wLjEwMzA2OSIgeTE9IjAuNzMxNDk2IiB4Mj0iMS4xMDMwNjkiIHkyPSIwLjI2ODUwNCI+PHN0b3Agb2Zmc2V0PSI0OCUiIHN0b3AtY29sb3I9IiNmZmM5ZDEiIHN0b3Atb3BhY2l0eT0iMC41Ii8+PHN0b3Agb2Zmc2V0PSI0OCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMDA4ODc3IiB5MT0iMS4wMDg1NzMiIHgyPSIwLjk5MTEyMyIgeTI9Ii0wLjAwODU3MyI+PHN0b3Agb2Zmc2V0PSIxNiUiIHN0b3AtY29sb3I9IiNmZmQ5ZGUiIHN0b3Atb3BhY2l0eT0iMC41Ii8+PHN0b3Agb2Zmc2V0PSIxNiUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9Ii0wLjEwMzUiIHkxPSIwLjc0MzgzIiB4Mj0iMS4xMDM1IiB5Mj0iMC4yNTYxNyI+PHN0b3Agb2Zmc2V0PSI2MiUiIHN0b3AtY29sb3I9IiNmZmFiYjciIHN0b3Atb3BhY2l0eT0iMC41Ii8+PHN0b3Agb2Zmc2V0PSI2MiUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9Ii0wLjA1MzA1NCIgeTE9IjAuNDMyMDkzIiB4Mj0iMS4wNTMwNTQiIHkyPSIwLjU2NzkwNyI+PHN0b3Agb2Zmc2V0PSI2MCUiIHN0b3AtY29sb3I9IiNmZmYyZjQiIHN0b3Atb3BhY2l0eT0iMC41Ii8+PHN0b3Agb2Zmc2V0PSI2MCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), #CEEEE7;
-  background: -moz-linear-gradient(74deg, rgba(255, 255, 255, 0.5) 38%, rgba(0, 0, 0, 0) 38%), -moz-linear-gradient(21deg, rgba(253, 219, 223, 0.5) 98%, rgba(0, 0, 0, 0) 98%), -moz-linear-gradient(65deg, rgba(255, 255, 255, 0.5) 18%, rgba(0, 0, 0, 0) 18%), -moz-linear-gradient(75deg, rgba(254, 223, 228, 0.5) 49%, rgba(0, 0, 0, 0) 49%), -moz-linear-gradient(51deg, rgba(255, 201, 209, 0.5) 23%, rgba(0, 0, 0, 0) 23%), -moz-linear-gradient(20deg, rgba(255, 255, 255, 0.5) 23%, rgba(0, 0, 0, 0) 23%), -moz-linear-gradient(21deg, rgba(255, 201, 209, 0.5) 48%, rgba(0, 0, 0, 0) 48%), -moz-linear-gradient(46deg, rgba(255, 217, 222, 0.5) 16%, rgba(0, 0, 0, 0) 16%), -moz-linear-gradient(22deg, rgba(255, 171, 183, 0.5) 62%, rgba(0, 0, 0, 0) 62%), -moz-linear-gradient(353deg, rgba(255, 242, 244, 0.5) 60%, rgba(0, 0, 0, 0) 60%), #CEEEE7;
-  background: -webkit-linear-gradient(74deg, rgba(255, 255, 255, 0.5) 38%, rgba(0, 0, 0, 0) 38%), -webkit-linear-gradient(21deg, rgba(253, 219, 223, 0.5) 98%, rgba(0, 0, 0, 0) 98%), -webkit-linear-gradient(65deg, rgba(255, 255, 255, 0.5) 18%, rgba(0, 0, 0, 0) 18%), -webkit-linear-gradient(75deg, rgba(254, 223, 228, 0.5) 49%, rgba(0, 0, 0, 0) 49%), -webkit-linear-gradient(51deg, rgba(255, 201, 209, 0.5) 23%, rgba(0, 0, 0, 0) 23%), -webkit-linear-gradient(20deg, rgba(255, 255, 255, 0.5) 23%, rgba(0, 0, 0, 0) 23%), -webkit-linear-gradient(21deg, rgba(255, 201, 209, 0.5) 48%, rgba(0, 0, 0, 0) 48%), -webkit-linear-gradient(46deg, rgba(255, 217, 222, 0.5) 16%, rgba(0, 0, 0, 0) 16%), -webkit-linear-gradient(22deg, rgba(255, 171, 183, 0.5) 62%, rgba(0, 0, 0, 0) 62%), -webkit-linear-gradient(353deg, rgba(255, 242, 244, 0.5) 60%, rgba(0, 0, 0, 0) 60%), #CEEEE7;
-  background: linear-gradient(16deg, rgba(255, 255, 255, 0.5) 38%, rgba(0, 0, 0, 0) 38%), linear-gradient(69deg, rgba(253, 219, 223, 0.5) 98%, rgba(0, 0, 0, 0) 98%), linear-gradient(25deg, rgba(255, 255, 255, 0.5) 18%, rgba(0, 0, 0, 0) 18%), linear-gradient(15deg, rgba(254, 223, 228, 0.5) 49%, rgba(0, 0, 0, 0) 49%), linear-gradient(39deg, rgba(255, 201, 209, 0.5) 23%, rgba(0, 0, 0, 0) 23%), linear-gradient(70deg, rgba(255, 255, 255, 0.5) 23%, rgba(0, 0, 0, 0) 23%), linear-gradient(69deg, rgba(255, 201, 209, 0.5) 48%, rgba(0, 0, 0, 0) 48%), linear-gradient(44deg, rgba(255, 217, 222, 0.5) 16%, rgba(0, 0, 0, 0) 16%), linear-gradient(68deg, rgba(255, 171, 183, 0.5) 62%, rgba(0, 0, 0, 0) 62%), linear-gradient(97deg, rgba(255, 242, 244, 0.5) 60%, rgba(0, 0, 0, 0) 60%), #CEEEE7;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMzQxNTA2IiB5MT0iMS4wOTE1MDYiIHgyPSIwLjY1ODQ5NCIgeTI9Ii0wLjA5MTUwNiI+PHN0b3Agb2Zmc2V0PSI5MyUiIHN0b3AtY29sb3I9IiNmZGM2Y2UiIHN0b3Atb3BhY2l0eT0iMC41Ii8+PHN0b3Agb2Zmc2V0PSI5MyUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9Ii0wLjA4NDI5MSIgeTE9IjAuNjM0ODk0IiB4Mj0iMS4wODQyOTEiIHkyPSIwLjM2NTEwNiI+PHN0b3Agb2Zmc2V0PSIzMyUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC41Ii8+PHN0b3Agb2Zmc2V0PSIzMyUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNDMyMDkzIiB5MT0iMS4wNTMwNTQiIHgyPSIwLjU2NzkwNyIgeTI9Ii0wLjA1MzA1NCI+PHN0b3Agb2Zmc2V0PSI5NSUiIHN0b3AtY29sb3I9IiNmZmJmYzgiIHN0b3Atb3BhY2l0eT0iMC41Ii8+PHN0b3Agb2Zmc2V0PSI5NSUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9Ii0wLjA1OTIyNSIgeTE9IjAuNDIxNDA2IiB4Mj0iMS4wNTkyMjUiIHkyPSIwLjU3ODU5NCI+PHN0b3Agb2Zmc2V0PSIyJSIgc3RvcC1jb2xvcj0iI2ZmYmFjNCIgc3RvcC1vcGFjaXR5PSIwLjUiLz48c3RvcCBvZmZzZXQ9IjIlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9Ii0wLjA5NzA1OCIgeTE9IjAuODE3NDYxIiB4Mj0iMS4wOTcwNTgiIHkyPSIwLjE4MjUzOSI+PHN0b3Agb2Zmc2V0PSI1MSUiIHN0b3AtY29sb3I9IiNmZmU4ZWIiIHN0b3Atb3BhY2l0eT0iMC41Ii8+PHN0b3Agb2Zmc2V0PSI1MSUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNDIxNDA2IiB5MT0iMS4wNTkyMjUiIHgyPSIwLjU3ODU5NCIgeTI9Ii0wLjA1OTIyNSI+PHN0b3Agb2Zmc2V0PSI0NyUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC41Ii8+PHN0b3Agb2Zmc2V0PSI0NyUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMDU3NDQxIiB5MT0iMS4wNDY1MTUiIHgyPSIwLjk0MjU1OSIgeTI9Ii0wLjA0NjUxNSI+PHN0b3Agb2Zmc2V0PSI3JSIgc3RvcC1jb2xvcj0iI2ZmZmNmZCIgc3RvcC1vcGFjaXR5PSIwLjUiLz48c3RvcCBvZmZzZXQ9IjclIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9Ii0wLjAwODU3MyIgeTE9IjAuNDkxMTIzIiB4Mj0iMS4wMDg1NzMiIHkyPSIwLjUwODg3NyI+PHN0b3Agb2Zmc2V0PSIxNyUiIHN0b3AtY29sb3I9IiNmNzk0YTIiIHN0b3Atb3BhY2l0eT0iMC41Ii8+PHN0b3Agb2Zmc2V0PSIxNyUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9Ii0wLjA1OTIyNSIgeTE9IjAuNTc4NTk0IiB4Mj0iMS4wNTkyMjUiIHkyPSIwLjQyMTQwNiI+PHN0b3Agb2Zmc2V0PSI4MiUiIHN0b3AtY29sb3I9IiNmYjk2YTQiIHN0b3Atb3BhY2l0eT0iMC41Ii8+PHN0b3Agb2Zmc2V0PSI4MiUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9Ii0wLjA2NTAxOCIgeTE9IjAuOTEwNTEiIHgyPSIxLjA2NTAxOCIgeTI9IjAuMDg5NDkiPjxzdG9wIG9mZnNldD0iMjklIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuNSIvPjxzdG9wIG9mZnNldD0iMjklIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='), #CEEEE7;
+  background: -moz-linear-gradient(75deg, rgba(253, 198, 206, 0.5) 93%, rgba(0, 0, 0, 0) 93%), -moz-linear-gradient(13deg, rgba(255, 255, 255, 0.5) 33%, rgba(0, 0, 0, 0) 33%), -moz-linear-gradient(83deg, rgba(255, 191, 200, 0.5) 95%, rgba(0, 0, 0, 0) 95%), -moz-linear-gradient(352deg, rgba(255, 186, 196, 0.5) 2%, rgba(0, 0, 0, 0) 2%), -moz-linear-gradient(28deg, rgba(255, 232, 235, 0.5) 51%, rgba(0, 0, 0, 0) 51%), -moz-linear-gradient(82deg, rgba(255, 255, 255, 0.5) 47%, rgba(0, 0, 0, 0) 47%), -moz-linear-gradient(51deg, rgba(255, 252, 253, 0.5) 7%, rgba(0, 0, 0, 0) 7%), -moz-linear-gradient(359deg, rgba(247, 148, 162, 0.5) 17%, rgba(0, 0, 0, 0) 17%), -moz-linear-gradient(8deg, rgba(251, 150, 164, 0.5) 82%, rgba(0, 0, 0, 0) 82%), -moz-linear-gradient(36deg, rgba(255, 255, 255, 0.5) 29%, rgba(0, 0, 0, 0) 29%), #CEEEE7;
+  background: -webkit-linear-gradient(75deg, rgba(253, 198, 206, 0.5) 93%, rgba(0, 0, 0, 0) 93%), -webkit-linear-gradient(13deg, rgba(255, 255, 255, 0.5) 33%, rgba(0, 0, 0, 0) 33%), -webkit-linear-gradient(83deg, rgba(255, 191, 200, 0.5) 95%, rgba(0, 0, 0, 0) 95%), -webkit-linear-gradient(352deg, rgba(255, 186, 196, 0.5) 2%, rgba(0, 0, 0, 0) 2%), -webkit-linear-gradient(28deg, rgba(255, 232, 235, 0.5) 51%, rgba(0, 0, 0, 0) 51%), -webkit-linear-gradient(82deg, rgba(255, 255, 255, 0.5) 47%, rgba(0, 0, 0, 0) 47%), -webkit-linear-gradient(51deg, rgba(255, 252, 253, 0.5) 7%, rgba(0, 0, 0, 0) 7%), -webkit-linear-gradient(359deg, rgba(247, 148, 162, 0.5) 17%, rgba(0, 0, 0, 0) 17%), -webkit-linear-gradient(8deg, rgba(251, 150, 164, 0.5) 82%, rgba(0, 0, 0, 0) 82%), -webkit-linear-gradient(36deg, rgba(255, 255, 255, 0.5) 29%, rgba(0, 0, 0, 0) 29%), #CEEEE7;
+  background: linear-gradient(15deg, rgba(253, 198, 206, 0.5) 93%, rgba(0, 0, 0, 0) 93%), linear-gradient(77deg, rgba(255, 255, 255, 0.5) 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(7deg, rgba(255, 191, 200, 0.5) 95%, rgba(0, 0, 0, 0) 95%), linear-gradient(98deg, rgba(255, 186, 196, 0.5) 2%, rgba(0, 0, 0, 0) 2%), linear-gradient(62deg, rgba(255, 232, 235, 0.5) 51%, rgba(0, 0, 0, 0) 51%), linear-gradient(8deg, rgba(255, 255, 255, 0.5) 47%, rgba(0, 0, 0, 0) 47%), linear-gradient(39deg, rgba(255, 252, 253, 0.5) 7%, rgba(0, 0, 0, 0) 7%), linear-gradient(91deg, rgba(247, 148, 162, 0.5) 17%, rgba(0, 0, 0, 0) 17%), linear-gradient(82deg, rgba(251, 150, 164, 0.5) 82%, rgba(0, 0, 0, 0) 82%), linear-gradient(54deg, rgba(255, 255, 255, 0.5) 29%, rgba(0, 0, 0, 0) 29%), #CEEEE7;
   position: absolute;
-  margin-top: 203px;
   width: 100%;
-  border-top: 5px solid #fff;
   z-index: 993;
 }
-/* line 40, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+/* line 20, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
 .engagementPhotos div {
   flex: auto;
   width: 25%;
   padding: 1%;
 }
-/* line 46, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+/* line 26, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
 .engagementPhotos div:nth-child(4n+2) {
   flex-grow: 2;
   width: 50%;
 }
-/* line 51, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+/* line 31, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
 .engagementPhotos div:nth-child(4n+3) {
   margin-top: 50px;
 }
-/* line 55, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+/* line 35, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
 .engagementPhotos div:nth-child(4n+1) {
   margin-top: -50px;
 }
-/* line 59, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+/* line 39, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
 .engagementPhotos div:nth-child(4n+4) {
   margin-left: -30px;
 }
-/* line 63, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+/* line 43, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
 .engagementPhotos div:nth-child(1n+1) {
   margin-right: -30px;
 }
-/* line 68, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+/* line 48, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+.engagementPhotos div.engagementPhotos__intro {
+  padding: 0 25px;
+  margin: 0;
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+}
+@media screen and (max-width: 991px) {
+  /* line 48, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+  .engagementPhotos div.engagementPhotos__intro {
+    flex-grow: 50;
+    padding: 0 25px;
+    margin-left: -35px;
+  }
+}
+/* line 71, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+.engagementPhotos div.engagementPhotos__intro p {
+  margin-bottom: 15px;
+}
+/* line 75, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+.engagementPhotos div.engagementPhotos__intro h1 {
+  font-family: "Patua One", cursive;
+  font-size: 35px;
+  margin: 0 0 20px 0;
+}
+@media screen and (max-width: 991px) {
+  /* line 75, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+  .engagementPhotos div.engagementPhotos__intro h1 {
+    padding: 0 50px;
+    font-size: 30px;
+    margin: -10px 0 15px 0;
+  }
+}
+/* line 88, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+.engagementPhotos div.engagementPhotos__outro {
+  text-align: center;
+}
+/* line 91, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+.engagementPhotos div.engagementPhotos__outro .btn {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 991px) {
+  /* line 88, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+  .engagementPhotos div.engagementPhotos__outro {
+    font-size: 16px;
+  }
+}
+/* line 100, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+.engagementPhotos div.engagementPhotos__outro .btn-ghost,
+.engagementPhotos div.engagementPhotos__outro .btn.btn-ghost {
+  background: #BABABA;
+}
+/* line 104, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+.engagementPhotos div.engagementPhotos__outro .btn-ghost:hover, .engagementPhotos div.engagementPhotos__outro .btn-ghost:active, .engagementPhotos div.engagementPhotos__outro .btn-ghost:focus,
+.engagementPhotos div.engagementPhotos__outro .btn.btn-ghost:hover,
+.engagementPhotos div.engagementPhotos__outro .btn.btn-ghost:active,
+.engagementPhotos div.engagementPhotos__outro .btn.btn-ghost:focus {
+  background: none;
+}
+@media screen and (max-width: 991px) {
+  /* line 88, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+  .engagementPhotos div.engagementPhotos__outro {
+    flex-grow: 50;
+    font-size: 16px;
+  }
+}
+/* line 118, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
 .engagementPhotos div img {
   border: 5px solid #FDFCF3;
   border-radius: 10px;
   cursor: pointer;
 }
 
-/* line 80, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+/* line 130, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
 .full {
   position: fixed;
   width: 100%;
@@ -9159,14 +9214,14 @@ body {
   display: none;
   background: rgba(255, 255, 255, 0.9);
 }
-/* line 88, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+/* line 138, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
 .full img {
   padding-top: 3%;
   padding-bottom: 3%;
   position: relative;
   z-index: 997;
 }
-/* line 97, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+/* line 147, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
 .full .left,
 .full .right,
 .full .x {
@@ -9176,17 +9231,17 @@ body {
   cursor: pointer;
   text-shadow: 0px 0px 1px #000000;
 }
-/* line 107, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+/* line 157, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
 .full .left {
   left: 5%;
   top: 45%;
 }
-/* line 112, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+/* line 162, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
 .full .right {
   right: 5%;
   top: 45%;
 }
-/* line 117, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
+/* line 167, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_engagement-photos.scss */
 .full .x {
   top: 1%;
   right: 1%;
