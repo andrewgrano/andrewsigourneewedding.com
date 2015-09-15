@@ -391,6 +391,62 @@
 }
 
 
-.spacer {
-    height: 800px;
+.outro {
+    text-align: center;
+    background: $mint;
+    // overflow: hidden;
+
+    .container {
+        height: 700px;
+        position: relative;
+    }
+
+
+
+    .outro-a {
+        h4 {
+            font-family: $font-display;
+            font-size: 38px;
+            padding-top: 275px;
+        }
+    }
+
+    .arrow1,
+    .arrow2 {
+        width: 115px;
+        position: absolute;
+    }
+
+    .outro-b {
+
+        h4 {
+            // @include rotated-text($num-letters: 24, $angle-span: 180deg, $angle-offset: 0deg);
+            text-shadow: 2px 2px 0 tint(#300,80%);
+            font-family: $font-display;
+            font-size: 38px;
+
+            span {
+                display: inline-block
+            }
+
+
+            // span {
+            //     font-size: 26px Monaco, MonoSpace;
+                // height: 200px;
+                // position: absolute;
+                // width: 20px;
+                // left: 0;
+                // top: 0;
+                // transform-origin: bottom center;
+
+            // }
+
+
+            .char7,
+            .char21,
+            .char18 {
+                width: 15px;
+            }
+        }
+    }
 }

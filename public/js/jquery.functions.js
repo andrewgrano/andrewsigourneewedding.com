@@ -1,4 +1,4 @@
-var s = skrollr.init();
+
 
 
 // $(function() {

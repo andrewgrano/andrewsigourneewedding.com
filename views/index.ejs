@@ -125,18 +125,63 @@
                         <p data--100-bottom-top="opacity:0;" data--300-bottom-top="opacity:1;">In year three of College, Andrew decided to change majors (and schools). Sigournee's school offered the  Multimedia program that Andrew was looking for. Andrew moved, and we were no longer far apart.</p>
                         <p data--100-bottom-top="opacity:0;" data--300-bottom-top="opacity:1;">After College, we moved into a tiny studio apartment together. We both worked and saved up enough to eventually move into a more spacious apartment in our favorite area of LA.</p>
                         <p data--100-bottom-top="opacity:0;" data--300-bottom-top="opacity:1;">In the Spring of 2015, we traveled to Italy together. It was a beautiful, romantic trip. We have caught the travel bug and plan on taking many more trips together!</p>
-                        <p data--100-bottom-top="opacity:0;" data--300-bottom-top="opacity:1;">From best friends, to high school sweethearts, to roommates, to travel companions, Sigournee and Andrew have been together through life. Now, we are ready to tie the knot and continue our journey as husband and wife.</p>
+                        <p data--100-bottom-top="opacity:0;" data--300-bottom-top="opacity:1;">From best friends, to high school sweethearts, to roommates, to travel companions, we have been together through life. Now, we are ready to tie the knot and continue our journey as husband and wife.</p>
                     </div>
                     <img class="story__footerImg center-block" src="/img/another-flower.svg">
                 </div>
             </div>
         </div>
     </section>
-    <section class="spacer">
-
+    <section class="outro">
+        <div class="outro-a">
+            <div class="container">
+                <h4>More <br>information<br>to come</h4>
+                <img src="../img/arrow1.svg" class="arrow1" data-300-bottom-top="top:-50px;right:-115px;" data--100-bottom-top="top:220px;right: 570px;">
+                <img src="../img/arrow2.svg" class="arrow2" data-200-bottom-top="top:950px;left:-115px;" data--200-bottom-top="top:425px;left:595px;">
+            </div>
+        </div>
+        <div class="outro-b">
+            <h4 id="lettering">
+                <span class="char1">F</span>
+                <span class="char2">o</span>
+                <span class="char3">r</span>
+                <span class="char4">m</span>
+                <span class="char5">a</span>
+                <span class="char6">l</span>
+                <span class="char7"> </span>
+                <span class="char8">i</span>
+                <span class="char9">n</span>
+                <span class="char10">v</span>
+                <span class="char11">i</span>
+                <span class="char12">t</span>
+                <span class="char13">a</span>
+                <span class="char14">t</span>
+                <span class="char15">i</span>
+                <span class="char16">o</span>
+                <span class="char17">n</span>
+                <span class="char18"> </span>
+                <span class="char19">t</span>
+                <span class="char20">o</span>
+                <span class="char21"> </span>
+                <span class="char22">f</span>
+                <span class="char23">o</span>
+                <span class="char24">l</span>
+                <span class="char25">l</span>
+                <span class="char26">o</span>
+                <span class="char27">w</span>
+            </h4>
+        </div>
     </section>
 
     <% include partials/footer %>
+    <script src="../js/skrollr.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var s = skrollr.init();
 
+            console.log('lettering')
+            $("#lettering").lettering();
+        });
+    </script>
 </body>
 </html>

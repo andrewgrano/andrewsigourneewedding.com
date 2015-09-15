@@ -4,3 +4,65 @@ $browser-context: 16; // Default
 @function em($pixels, $context: $browser-context) {
   @return #{$pixels/$context}em
 }
+
+//rotated text
+@mixin rotated-text($num-letters: 100, $angle-span: 180deg, $angle-offset: 0deg) {
+$angle-per-char: $angle-span / $num-letters;
+@for $i from 1 through $num-letters {
+.char#{$i} {
+@include transform(rotate($angle-offset + $angle-per-char * $i))
+}
+}
+}
+
+
+
+/// Mixes a color with black.
+///
+/// @param {Color} $color
+///
+/// @param {Number (Percentage)} $percent
+///   The amount of black to be mixed in.
+///
+/// @example scss - Usage
+///   .element {
+///     background-color: shade(#ffbb52, 60%);
+///   }
+///
+/// @example css - CSS Output
+///   .element {
+///     background-color: #664a20;
+///   }
+///
+/// @return {Color}
+
+@function shade($color, $percent) {
+  @return mix(#000, $color, $percent);
+}
+
+/// Mixes a color with white.
+///
+/// @param {Color} $color
+///
+/// @param {Number (Percentage)} $percent
+///   The amount of white to be mixed in.
+///
+/// @example scss - Usage
+///   .element {
+///     background-color: tint(#6ecaa6, 40%);
+///   }
+///
+/// @example css - CSS Output
+///   .element {
+///     background-color: #a8dfc9;
+///   }
+///
+/// @return {Color}
+
+@function tint($color, $percent) {
+  @return mix(#fff, $color, $percent);
+}
+
+
+
+
