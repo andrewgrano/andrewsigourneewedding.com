@@ -394,21 +394,38 @@
 .outro {
     text-align: center;
     background: $mint;
-    // overflow: hidden;
-
-    .container {
-        height: 700px;
-        position: relative;
-    }
-
-
+    overflow: hidden;
 
     .outro-a {
         h4 {
             font-family: $font-display;
             font-size: 38px;
             padding-top: 275px;
+
+            @media screen and (max-width: $screen-md-max) {
+                padding-top: 200px;
+            }
+
+            @media screen and (max-width: $screen-sm-max) {
+                padding-top: 130px;
+                font-size: 32px;
+            }
         }
+
+        .container {
+            height: 575px;
+            position: relative;
+
+            @media screen and (max-width: $screen-md-max) {
+                height: 500px;
+            }
+
+            @media screen and (max-width: $screen-sm-max) {
+                height: 400px;
+            }
+        }
+
+
     }
 
     .arrow1,
@@ -417,35 +434,55 @@
         position: absolute;
     }
 
+    .arrow1 {
+        top:220px;
+        right: 570px;
+
+        @media screen and (max-width: $screen-md-max) {
+            margin-right: -70px;
+            margin-top: -75px;
+        }
+
+        @media screen and (max-width: $screen-sm-max) {
+            margin-right: -200px;
+            margin-top: -125px;
+        }
+
+    }
+
+    .arrow2 {
+
+        top:425px;
+        left:595px;
+
+        @media screen and (max-width: $screen-md-max) {
+            margin-left: -70px;
+            margin-top: -75px;
+        }
+
+        @media screen and (max-width: $screen-sm-max) {
+            margin-left: -200px;
+            margin-top: -185px;
+        }
+
+    }
+
+
     .outro-b {
+        position: relative;
 
         h4 {
-            // @include rotated-text($num-letters: 24, $angle-span: 180deg, $angle-offset: 0deg);
-            text-shadow: 2px 2px 0 tint(#300,80%);
             font-family: $font-display;
             font-size: 38px;
+            background: url(../img/banner-heart.svg) no-repeat center top;
+            background-size: 800px;
+            margin-bottom: 0;
+            padding-bottom: 145px;
+            padding-top: 43px;
 
-            span {
-                display: inline-block
-            }
-
-
-            // span {
-            //     font-size: 26px Monaco, MonoSpace;
-                // height: 200px;
-                // position: absolute;
-                // width: 20px;
-                // left: 0;
-                // top: 0;
-                // transform-origin: bottom center;
-
-            // }
-
-
-            .char7,
-            .char21,
-            .char18 {
-                width: 15px;
+            @media screen and (max-width: $screen-sm-max) {
+                font-size: 32px;
+                background-size: 745px;
             }
         }
     }

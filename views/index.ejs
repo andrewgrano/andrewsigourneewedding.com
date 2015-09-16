@@ -140,8 +140,12 @@
                 <img src="../img/arrow2.svg" class="arrow2" data-200-bottom-top="top:950px;left:-115px;" data--200-bottom-top="top:425px;left:595px;">
             </div>
         </div>
-        <div class="outro-b">
-            <h4 id="lettering">
+        <div class="outro-b" data-300-bottom-top="top:200px;" data--200-bottom-top="top:-50px;">
+
+            <!-- <img src="../img/banner-heart.svg"> -->
+            <h4>Formal Invitation to Follow</h4>
+
+           <!--  <h4 id="lettering">
                 <span class="char1">F</span>
                 <span class="char2">o</span>
                 <span class="char3">r</span>
@@ -169,19 +173,38 @@
                 <span class="char25">l</span>
                 <span class="char26">o</span>
                 <span class="char27">w</span>
-            </h4>
+            </h4> -->
+
         </div>
     </section>
 
     <% include partials/footer %>
     <script src="../js/skrollr.min.js"></script>
     <script>
-        $(document).ready(function() {
-            var s = skrollr.init();
-
-            console.log('lettering')
-            $("#lettering").lettering();
+    $(function () {
+        if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+            //initialize skrollr if the window width is large enough
+            if ($(window).width() > 767) {
+                skrollr.init({
+                forceHeight: false
+            });
+        }
+        else {
+            skrollr.init().destroy();
+        }
+            // disable skrollr if the window is resized below 768px wide
+        $( window ).resize(function() {
+            if ($(window).width() <= 767) {
+                skrollr.init().destroy(); // skrollr.init() returns the singleton created above
+            }
+            else {
+                skrollr.init({
+                    forceHeight: false
+                });
+            }
         });
+        }
+    });
     </script>
 </body>
 </html>

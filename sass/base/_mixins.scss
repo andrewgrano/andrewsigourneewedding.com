@@ -5,16 +5,14 @@ $browser-context: 16; // Default
   @return #{$pixels/$context}em
 }
 
-//rotated text
-@mixin rotated-text($num-letters: 100, $angle-span: 180deg, $angle-offset: 0deg) {
-$angle-per-char: $angle-span / $num-letters;
-@for $i from 1 through $num-letters {
-.char#{$i} {
-@include transform(rotate($angle-offset + $angle-per-char * $i))
+//transition from: http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
 }
-}
-}
-
 
 
 /// Mixes a color with black.
