@@ -165,6 +165,10 @@
             height: 100%;
             z-index: 2;
             background: $champagne;
+
+            @media screen and (max-width: $screen-xs-max) {
+                display: none;
+            }
         }
 
         [class^="announceMain__text"] {
@@ -234,9 +238,9 @@
     height: 500px;
     width: 100%;
 
-    @media(max-width:900px) {
-        background-size: 200px;
-    }
+    // @media(max-width:900px) {
+    //     background-size: 200px;
+    // }
 
     @media screen and (max-width: $screen-sm-max) {
         height: 422px;
@@ -410,6 +414,16 @@
                 padding-top: 130px;
                 font-size: 32px;
             }
+
+            @media screen and (max-width: $screen-xs-max) {
+                font-size: 25px;
+                padding-top: 90px;
+            }
+
+            @media screen and (max-width: $screen-xs-min) {
+                font-size: 22px;
+                padding-top: 75px;
+            }
         }
 
         .container {
@@ -422,6 +436,14 @@
 
             @media screen and (max-width: $screen-sm-max) {
                 height: 400px;
+            }
+
+            @media screen and (max-width: $screen-sm-max) {
+                height: 290px;
+            }
+
+            @media screen and (max-width: $screen-xs-min) {
+                height: 275px;
             }
         }
 
@@ -448,6 +470,16 @@
             margin-top: -125px;
         }
 
+        @media screen and (max-width: $screen-xs-max) {
+            margin-right: -350px;
+            margin-top: -165px;
+        }
+
+        @media screen and (max-width: $screen-xs-min) {
+            margin-right: -440px;
+            margin-top: -180px;
+        }
+
     }
 
     .arrow2 {
@@ -465,6 +497,15 @@
             margin-top: -185px;
         }
 
+        @media screen and (max-width: $screen-xs-max) {
+            margin-left: -375px;
+            margin-top: -245px;
+        }
+
+        @media screen and (max-width: $screen-xs-min) {
+            margin-left: -455px;
+            margin-top: -270px;
+        }
     }
 
 
@@ -483,6 +524,28 @@
             @media screen and (max-width: $screen-sm-max) {
                 font-size: 32px;
                 background-size: 745px;
+            }
+
+            @media screen and (max-width: $screen-xs-max) {
+                font-size: 25px;
+                padding-top: 29px;
+                padding-bottom: 195px;
+                background-size: 496px;
+            }
+
+            @media screen and (max-width: $screen-xs-min) {
+                background: url(../img/banner-heart-mobile.svg) no-repeat center top;
+                background-size: 320px;
+                padding-top: 38px;
+                line-height: 1;
+                font-size: 22px;
+                width: 320px;
+                padding-left: 65px;
+                padding-right: 65px;
+            }
+
+            @media screen and (max-width: $screen-xs-min) {
+                padding-bottom: 100px;
             }
         }
     }

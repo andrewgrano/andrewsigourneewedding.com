@@ -16,32 +16,68 @@
     // border-top: 5px solid $white;
     z-index: 993;
 
+    @media screen and (max-width: $screen-xs-max) {
+        padding: 50px 15px;
+    }
+
+    @media screen and (max-width: $screen-xs-min) {
+        display: block;
+    }
+
 
     div {
         flex: auto;
         width: 25%;
         padding: 1%;
 
+        @media screen and (max-width: $screen-xs-max) {
+            width: 50%;
+        }
+
+        @media screen and (max-width: $screen-xs-min) {
+            width: 100%
+        }
+
 
         &:nth-child(4n+2) {
             flex-grow:2;
             width: 50%;
+
+            @media screen and (max-width: $screen-xs-min) {
+                width: 100%;
+            }
         }
 
         &:nth-child(4n+3) {
             margin-top: 50px;
+
+            @media screen and (max-width: $screen-xs-max) {
+                margin-top: 0;
+            }
         }
 
         &:nth-child(4n+1) {
             margin-top: -50px;
+
+            @media screen and (max-width: $screen-xs-max) {
+                margin-top: 0;
+            }
         }
 
         &:nth-child(4n+4) {
             margin-left: -30px;
+
+            @media screen and (max-width: $screen-xs-max) {
+                margin-left: 0;
+            }
         }
 
         &:nth-child(1n+1) {
             margin-right: -30px;
+
+            @media screen and (max-width: $screen-xs-max) {
+                margin-right: 0;
+            }
         }
 
 
@@ -60,10 +96,23 @@
             // width: 100%;
             //z-index: 992;
 
+
             @media screen and (max-width: $screen-sm-max) {
                 flex-grow: 50;
                 padding: 0 25px;
                 margin-left: -35px;
+            }
+
+
+            @media screen and (max-width: $screen-xs-max) {
+                width: 100%;
+                margin-left: 0;
+                margin-bottom: 50px;
+                padding: 0 100px;
+            }
+
+            @media screen and (max-width: $screen-xs-min) {
+                padding: 0 25px;
             }
 
 
@@ -81,6 +130,10 @@
                     padding: 0 50px;
                     font-size: 30px;
                     margin: -10px 0 15px 0;
+                }
+
+                @media screen and (max-width: $screen-xs-min) {
+                    padding: 0 15px;
                 }
             }
         }
@@ -113,12 +166,22 @@
                 font-size: 16px;
             }
 
+            @media screen and (max-width: $screen-xs-min) {
+                margin-top: 50px;
+            }
+
         }
 
         img {
             border: 5px solid $champagne;
             border-radius: 10px;
             cursor: pointer;
+
+            @media screen and (max-width: $screen-xs-min) {
+                cursor: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
     }
 }
@@ -134,6 +197,10 @@
     z-index: 996;
     display: none;
     background: rgba(255,255,255,0.9);
+
+    @media screen and (max-width: $screen-xs-min) {
+        display: none !important;
+    }
 
     img {
         padding-top: 3%;

@@ -8,7 +8,11 @@ app.set('views', __dirname + '/views');
 app.use(express.static("public"));
 app.use('/', routes);
 
+
+//original code for local server
 var server = app.listen(3000, function() {
     var port = server.address().port;
     console.log("Node is listening on: " + port);
 });
+
+
