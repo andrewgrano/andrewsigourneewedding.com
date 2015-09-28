@@ -107,7 +107,7 @@
         <div class="parallax__buttonWrapper" data-45p-top-top="opacity:0; top:-200px;" data-25p-top-top="opacity:1;top:0px;">
         <!-- data-0-top-top="position:static;" data--100-top-top="position:fixed;" -->
         <!-- data-20p-top-top="opacity:0;" data--0p-top-top="opacity:1;" -->
-            <div class="btn-parallax-container"><a  href="/engagement-photos" class="btn btn-parallax btn-ghost" >View All of Our Engament Photos <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></div>
+            <div class="btn-parallax-container"><a  href="/engagement-photos" class="btn btn-parallax btn-ghost" >View All of Our Engagement Photos <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></div>
         </div>
     </section>
 
@@ -120,10 +120,10 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="story__content">
-                        <p data--100-bottom-top="opacity:0;" data--300-bottom-top="opacity:1;">We met in High School at the age of 15. Thanks to alphabetical seating in English class, we got to know each other all year. After that, we were inseperable.</p>
-                        <p data--100-bottom-top="opacity:0;" data--300-bottom-top="opacity:1;">After graduating High School, we atteneded sepearte Colleges 50 miles apart. With no cars, we often rode the train to visit each other.</p>
-                        <p data--100-bottom-top="opacity:0;" data--300-bottom-top="opacity:1;">In year three of College, Andrew decided to change majors (and schools). Sigournee's school offered the  Multimedia program that Andrew was looking for. Andrew moved, and we were no longer far apart.</p>
-                        <p data--100-bottom-top="opacity:0;" data--300-bottom-top="opacity:1;">After College, we moved into a tiny studio apartment together. We both worked and saved up enough to eventually move into a more spacious apartment in our favorite area of LA.</p>
+                        <p data--100-bottom-top="opacity:0;" data--300-bottom-top="opacity:1;">We met in High School at the age of 15. Thanks to alphabetical seating in English class, we got to know each other all year. After that, we were inseparable.</p>
+                        <p data--100-bottom-top="opacity:0;" data--300-bottom-top="opacity:1;">After graduating High School, we attended separate colleges 50 miles apart. With no cars, we often rode the train to visit each other.</p>
+                        <p data--100-bottom-top="opacity:0;" data--300-bottom-top="opacity:1;">In year three of college, Andrew decided to change majors (and schools). Sigournee's school offered the  Multimedia program that Andrew was looking for. Andrew moved, and we were no longer far apart.</p>
+                        <p data--100-bottom-top="opacity:0;" data--300-bottom-top="opacity:1;">After college, we moved into a tiny studio apartment together. We both worked and saved up enough to eventually move into a more spacious apartment in our favorite area of Los Angeles.</p>
                         <p data--100-bottom-top="opacity:0;" data--300-bottom-top="opacity:1;">In the Spring of 2015, we traveled to Italy together. It was a beautiful, romantic trip. We have caught the travel bug and plan on taking many more trips together!</p>
                         <p data--100-bottom-top="opacity:0;" data--300-bottom-top="opacity:1;">From best friends, to high school sweethearts, to roommates, to travel companions, we have been together through life. Now, we are ready to tie the knot and continue our journey as husband and wife.</p>
                     </div>
@@ -141,68 +141,41 @@
             </div>
         </div>
         <div class="outro-b" data-300-bottom-top="top:200px;" data--200-bottom-top="top:-50px;">
-
             <!-- <img src="../img/banner-heart.svg"> -->
             <h4>Formal Invitation to Follow</h4>
-
-           <!--  <h4 id="lettering">
-                <span class="char1">F</span>
-                <span class="char2">o</span>
-                <span class="char3">r</span>
-                <span class="char4">m</span>
-                <span class="char5">a</span>
-                <span class="char6">l</span>
-                <span class="char7"> </span>
-                <span class="char8">i</span>
-                <span class="char9">n</span>
-                <span class="char10">v</span>
-                <span class="char11">i</span>
-                <span class="char12">t</span>
-                <span class="char13">a</span>
-                <span class="char14">t</span>
-                <span class="char15">i</span>
-                <span class="char16">o</span>
-                <span class="char17">n</span>
-                <span class="char18"> </span>
-                <span class="char19">t</span>
-                <span class="char20">o</span>
-                <span class="char21"> </span>
-                <span class="char22">f</span>
-                <span class="char23">o</span>
-                <span class="char24">l</span>
-                <span class="char25">l</span>
-                <span class="char26">o</span>
-                <span class="char27">w</span>
-            </h4> -->
-
         </div>
+        <!-- <div class="contactUs"><span>Questions? Contact Us Here.</span></div> -->
     </section>
 
     <% include partials/footer %>
     <script src="../js/skrollr.min.js"></script>
     <script>
     $(function () {
+
+        $('#hero__Carousel').carousel({
+            interval: 3000,
+            pause: false
+        });
+
         if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
             //initialize skrollr if the window width is large enough
             if ($(window).width() > 767) {
                 skrollr.init({
-                forceHeight: false
-            });
-        }
-        else {
-            skrollr.init().destroy();
-        }
-            // disable skrollr if the window is resized below 768px wide
-        $( window ).resize(function() {
-            if ($(window).width() <= 767) {
-                skrollr.init().destroy(); // skrollr.init() returns the singleton created above
-            }
-            else {
-                skrollr.init({
                     forceHeight: false
                 });
-            }
-        });
+            } else {
+                skrollr.init().destroy();
+            };
+            // disable skrollr if the window is resized below 768px wide
+            $( window ).resize(function() {
+                if ($(window).width() <= 767) {
+                    skrollr.init().destroy(); // skrollr.init() returns the singleton created above
+                } else {
+                    skrollr.init({
+                        forceHeight: false
+                    });
+                }
+            });
         }
     });
     </script>

@@ -165,6 +165,7 @@
             height: 100%;
             z-index: 2;
             background: $champagne;
+            opacity: 0;
 
             @media screen and (max-width: $screen-xs-max) {
                 display: none;
@@ -399,6 +400,22 @@
     text-align: center;
     background: $mint;
     overflow: hidden;
+    position: relative;
+
+    .contactUs {
+        position: absolute;
+        bottom: 8px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+
+        span {
+            font-size: 16px;
+            background: $champagne;
+            cursor: pointer;
+            padding: 10px 25px 10px 25px;
+        }
+    }
 
     .outro-a {
         h4 {

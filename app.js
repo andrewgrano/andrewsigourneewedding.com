@@ -9,10 +9,16 @@ app.use(express.static("public"));
 app.use('/', routes);
 
 
-//original code for local server
+//code for local server
 var server = app.listen(3000, function() {
     var port = server.address().port;
     console.log("Node is listening on: " + port);
 });
+
+//code for production server
+// var server = app.listen(80, function() {
+//     var port = server.address().port;
+//     console.log("Node is listening on: " + port);
+// });
 
 
