@@ -16,6 +16,11 @@ router.get('/engagement-photos', function(req, res) {
     res.render('engagement-photos', { title: "Engagement Photos : Andrew and Sigournee" });
 });
 
+router.get('/groomsmen', function(req, res) {
+    res.render('groomsmen', { title: "Groomsmen : Andrew and Sigournee's Wedding" });
+});
+
+
 router.use(function(req, res){
     res.status(404).render('404', { title: "404 - Not Found" });
 });
