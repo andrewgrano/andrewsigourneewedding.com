@@ -98,6 +98,62 @@
             </div>
         </div>
     </section>
+
+
+    <section class="eventinfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="eventinfoItem">
+                        <!-- data--0-bottom-top="opacity:0; top:-200px" data--150-bottom-top="opacity:1; top:75px;" -->
+                        <img src="/img/whitebranch-left.svg" class="eventinfoItem__decor--left" >
+                        <!-- data--50-bottom-top="opacity:0; top:-275px" data--200-bottom-top="opacity:1; top:75px;" -->
+                        <img src="/img/whitebranch-right.svg" class="eventinfoItem__decor--right" >
+                        <h1 class="eventinfoItem__title">Ceremony</h1>
+                        <h2 class="eventinfoItem__subtitle">will be held at</h2>
+                        <div class="eventinfoItem__address">
+                            Bernardo Winery<br>
+                            13330 Paseo Del Verano Norte<br>
+                            San Diego, CA 92128
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                     <div class="eventinfoItem">
+                        <!--data--80-bottom-top="opacity:0; top:-245px" data--230-bottom-top="opacity:1; top:75px;" -->
+                        <img src="/img/whitebranch-left.svg" class="eventinfoItem__decor--left" >
+                        <!--  data--40-bottom-top="opacity:0; top:-200px" data--190-bottom-top="opacity:1; top:75px;" -->
+                        <img src="/img/whitebranch-right.svg" class="eventinfoItem__decor--right">
+
+                        <h1 class="eventinfoItem__title">Reception</h1>
+                        <h2 class="eventinfoItem__subtitle">will directly follow at</h2>
+                        <div class="eventinfoItem__address">
+                            The Grondin Household<br>
+                            10692 Rookwood Dr<br>
+                            San Diego, CA 92131
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- data--50-bottom-top="opacity:0;" data--200-bottom-top="opacity:1;" -->
+                <div class="eventinfoItem eventinfoItem--callout" >
+                    <h2 class="eventinfoItem__subtitle">Traveling from out of town?</h2>
+                    <div class="eventinfoItem__link" href="" data-toggle="modal" data-target="#modal-hotelinfo">View Nearby Hotel Infomation</div>
+                </div>
+
+                <img src="/img/whiteloops.svg" class="center-block eventinfoItem__breakerImg">
+                <!-- data-0-bottom-top="opacity:0;" data--150-bottom-top="opacity:1;" -->
+                <div class="eventinfoItem eventinfoItem--callout">
+                    <h2 class="eventinfoItem__subtitle">Have more questions?</h2>
+                    <div class="eventinfoItem__link" href="" data-toggle="modal" data-target="#modal-contact">Contact us by email</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- data-0-top-top="background-attachment:initial;" data-0-bottom-bottom="background-attachment:fixed;" -->
     <!-- data-0-top-top="background-attachment:initial;    data-100-bottom-bottom=background-attachment:fixed;-->
     <section class="parallax" data-0-top-top="background-size:120%;background-position:50% top;" data-100-bottom-bottom="background-size:100%;background-position:0% top;">
@@ -147,6 +203,8 @@
         <!-- <div class="contactUs"><span>Questions? Contact Us Here.</span></div> -->
     </section>
 
+    <% include partials/modal-hotelinfo %>
+    <% include partials/modal-contact %>
     <% include partials/footer %>
     <script src="../js/skrollr.min.js"></script>
     <script>
