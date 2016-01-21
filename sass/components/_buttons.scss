@@ -22,3 +22,29 @@
     }
 }
 
+.btn-gray,
+.btn.btn-gray {
+    color: $white;
+    font-family: $font-display;
+    font-weight: 400;
+    border: 3px solid;
+    background-color: $gray;
+    @include transition-property(background-color, color);
+    @include transition-duration(0.4s);
+    @include transition-timing-function(linear);
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $gray;
+        border-color: $gray;
+        background-color: transparent;
+    }
+
+    .glyphicon {
+        font-size: 0.85em;
+        position: relative;
+        top: 0.08em;
+    }
+}
+

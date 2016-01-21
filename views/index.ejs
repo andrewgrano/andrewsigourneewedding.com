@@ -12,52 +12,81 @@
 <body>
 
     <section class="hero">
+        <div class="hero__callout">
+             <h1 id="hero__headline">We're Getting Married!</h1>
+        </div>
         <div id="hero__Carousel" class="hero__Carousel carousel carousel-fade slide" data-ride="carousel">
             <!-- Indicators -->
-            <ol class="carousel-indicators">
+           <!--  <ol class="carousel-indicators">
                 <li data-target="#hero__Carousel" data-slide-to="0" class="active"></li>
                 <li data-target="#hero__Carousel" data-slide-to="1"></li>
                 <li data-target="#hero__Carousel" data-slide-to="2"></li>
                 <li data-target="#hero__Carousel" data-slide-to="3"></li>
                 <li data-target="#hero__Carousel" data-slide-to="4"></li>
-            </ol>
+            </ol> -->
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
                     <img src="/img/heroCarousel-1.jpg" class="hero__Carousel--img img-responsive" alt="Engagement Photo of Andrew and Sigournee in Venice on a gondola">
                 </div>
-                <div class="item">
-                    <img src="/img/heroCarousel-2.jpg" class="hero__Carousel--img img-responsive" alt="Engagement Photo of Andrew and Sigournee in Venice">
-                </div>
+
                 <div class="item">
                     <img src="/img/heroCarousel-3.jpg" class="hero__Carousel--img img-responsive" alt="Engagement Photo of Andrew and Sigournee in Venice">
                 </div>
                 <div class="item">
-                    <img src="/img/heroCarousel-4.jpg" class="hero__Carousel--img img-responsive" alt="Engagement Photo of Andrew and Sigournee in Venice">
+                    <img src="/img/heroCarousel-5.jpg" class="hero__Carousel--img img-responsive" alt="Engagement Photo of Andrew and Sigournee in Venice">
                 </div>
                 <div class="item">
-                    <img src="/img/heroCarousel-5.jpg" class="hero__Carousel--img img-responsive" alt="Engagement Photo of Andrew and Sigournee in Venice">
+                    <img src="/img/heroCarousel-4.jpg" class="hero__Carousel--img img-responsive" alt="Engagement Photo of Andrew and Sigournee in Venice">
+                </div>
+                 <div class="item">
+                    <img src="/img/heroCarousel-2.jpg" class="hero__Carousel--img img-responsive" alt="Engagement Photo of Andrew and Sigournee in Venice">
                 </div>
             </div>
 
             <!-- Controls -->
-            <a class="left carousel-control" href="#hero__Carousel" role="button" data-slide="prev">
+            <!-- <a class="left carousel-control" href="#hero__Carousel" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
             <a class="right carousel-control" href="#hero__Carousel" role="button" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
-            </a>
+            </a> -->
         </div>
-        <div class="hero__footer">
+        <!-- <div class="hero__footer">
             <div class="container">
                 <h1>We're Getting Married!</h1>
             </div>
-        </div>
+        </div> -->
     </section>
     <section class="announce">
+
+        <nav class="navigation navbar">
+            <div class="container">
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="nav navbar-nav">
+                        <li><a href="">Event Info</a></li>
+                        <li><a href="">Hotels</a></li>
+                        <li><a href="">Transportation</a></li>
+                        <li><a href="">Registry</a></li>
+                        <li><a href="">Our Story</a></li>
+                        <li><a href="">Photos</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
@@ -103,14 +132,14 @@
     <section class="eventinfo">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <div class="eventinfoItem">
                         <!-- data--0-bottom-top="opacity:0; top:-200px" data--150-bottom-top="opacity:1; top:75px;" -->
                         <img src="/img/whitebranch-left.svg" class="eventinfoItem__decor--left" >
                         <!-- data--50-bottom-top="opacity:0; top:-275px" data--200-bottom-top="opacity:1; top:75px;" -->
                         <img src="/img/whitebranch-right.svg" class="eventinfoItem__decor--right" >
                         <h1 class="eventinfoItem__title">Ceremony</h1>
-                        <h2 class="eventinfoItem__subtitle">will be held at</h2>
+                        <h2 class="eventinfoItem__subtitle">June 25th at 4pm</h2>
                         <div class="eventinfoItem__address">
                             Bernardo Winery<br>
                             13330 Paseo Del Verano Norte<br>
@@ -118,7 +147,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                      <div class="eventinfoItem">
                         <!--data--80-bottom-top="opacity:0; top:-245px" data--230-bottom-top="opacity:1; top:75px;" -->
                         <img src="/img/whitebranch-left.svg" class="eventinfoItem__decor--left" >
@@ -126,7 +155,7 @@
                         <img src="/img/whitebranch-right.svg" class="eventinfoItem__decor--right">
 
                         <h1 class="eventinfoItem__title">Reception</h1>
-                        <h2 class="eventinfoItem__subtitle">will directly follow at</h2>
+                        <h2 class="eventinfoItem__subtitle">will directly follow</h2>
                         <div class="eventinfoItem__address">
                             The Grondin Household<br>
                             10692 Rookwood Dr<br>
@@ -134,36 +163,276 @@
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="col-sm-4">
+                    <div class="eventinfoItem">
+                        <!-- data--0-bottom-top="opacity:0; top:-200px" data--150-bottom-top="opacity:1; top:75px;" -->
+                        <img src="/img/whitebranch-left.svg" class="eventinfoItem__decor--left" >
+                        <!-- data--50-bottom-top="opacity:0; top:-275px" data--200-bottom-top="opacity:1; top:75px;" -->
+                        <img src="/img/whitebranch-right.svg" class="eventinfoItem__decor--right" >
+                        <h1 class="eventinfoItem__title">Brunch</h1>
+                        <h2 class="eventinfoItem__subtitle">the following morning</h2>
+                        <div class="eventinfoItem__address">
+                            The Grondin Household<br>
+                            Sunday, June 26th 2016<br>
+                            11:00 AM - 2:00 PM
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+<!--
             <div class="row">
-                <!-- data--50-bottom-top="opacity:0;" data--200-bottom-top="opacity:1;" -->
                 <div class="eventinfoItem eventinfoItem--callout" >
                     <h2 class="eventinfoItem__subtitle">Traveling from out of town?</h2>
                     <div class="eventinfoItem__link" href="" data-toggle="modal" data-target="#modal-hotelinfo">View Nearby Hotel Infomation</div>
                 </div>
 
                 <img src="/img/whiteloops.svg" class="center-block eventinfoItem__breakerImg">
-                <!-- data-0-bottom-top="opacity:0;" data--150-bottom-top="opacity:1;" -->
                 <div class="eventinfoItem eventinfoItem--callout">
                     <h2 class="eventinfoItem__subtitle">Have more questions?</h2>
                     <div class="eventinfoItem__link" href="" data-toggle="modal" data-target="#modal-contact">Contact us by email</div>
                 </div>
             </div>
+-->
         </div>
     </section>
 
-
-    <!-- data-0-top-top="background-attachment:initial;" data-0-bottom-bottom="background-attachment:fixed;" -->
-    <!-- data-0-top-top="background-attachment:initial;    data-100-bottom-bottom=background-attachment:fixed;-->
-    <section class="parallax" data-0-top-top="background-size:120%;background-position:50% top;" data-100-bottom-bottom="background-size:100%;background-position:0% top;">
+    <!-- data-100-bottom-bottom="background-attachment:initial; background-position-y:0px;" data-63-top-top="background-attachment:fixed; background-position-y:0px;" data-62-top-top="background-attachment:fixed; background-position-y:60px;" data--300-top-top="background-position-y:-100px;" -->
+    <section class="parallax" data-400-bottom-bottom="background-position-y:-200px; margin-top:-80px;" data-700-bottom-bottom="margin-top:-80px;" data--300-top-top="background-position-y:0px;  margin-top:0;">
         <!-- <img src="../img/parallax.jpg" class="img-responsive"> -->
         <!--  -->
         <!-- data-20p-top-top="opacity:0;" data--0p-top-top="opacity:1;" -->
+    </section>
+
+    <section class="transportation">
+        <div class="container">
+            <h2>Transportation</h2>
+
+            <div class="transportation__main">
+                <p>We want all of our guests to enjoy the celebration and get home safely at the end of the night!</p>
+                <p>Following the reception, guests can take a free ride home using Uber. We will provide a promo code that you can enter in the app to receieve a ride on us.</p>
+                <p>The next day, from 11:00 AM - 2:00 PM, use the promo code again to get a ride back to the Grondin Household.  <!-- Enjoy brunch and pick up your car. --></p>
+                <p>Check back closer to the date for the promo code and more details.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hotels">
+        <div class="container">
+            <h2>Nearby Hotels</h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="hotelCard">
+                        <!-- discount in link to website, coupon code GGW, approx 15% discount -->
+                        <h3 class="hotelCard__name">Holiday Inn – Miramar</h3>
+                        <h4 class="hotelCard__distance">6 mins (1.7 miles) from Reception</h4>
+                        <h4 class="hotelCard__rating">
+
+                            <span class="hotelCard__rating-text">3 Star Hotel</span>
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+
+                        </h4>
+                        <div class="hotelCard__address">
+                            <a target="map"  href="https://www.google.com/maps/place/9335+Kearny+Mesa+Rd,+San+Diego,+CA+92126/@32.8926195,-117.1198706,17z/data=!3m1!4b1!4m2!3m1!1s0x80dbf92cd7fc7823:0x613b4ac2b0d001ed">
+                            9335 Kearny Mesa Rd<br>San Diego, CA 92126
+                            </a>
+                        </div>
+                        <div class="hotelCard__phone">
+                            <a href="tel:8586952300">(858) 695‐2300</a>
+                        </div>
+                        <div class="hotelCard__link">
+                            <a href="http://www.ihg.com/holidayinn/hotels/us/en/san-diego/sanmm/hoteldetail?qAdlt=1&qBrs=6c.hi.ex.rs.ic.cp.in.sb.cw.cv.ul.vn&qChld=0&qFRA=1&qGRM=0&qGrpCd=GGW&qPSt=0&qRRSrt=rt&qRef=df&qRms=1&qRpn=1&qRpp=12&qSHp=1&qSmP=3&qSrt=sBR&qWch=0&srb_u=1&icdv=99801505&icdv=99801505" target="holidayInn">View Website <span class="glyphicon glyphicon-menu-right"></span></a>
+                        </div>
+                        <div class="hotelCard__discount" data-toggle="tooltip" data-placement="top" title="Use coupon code GGW on their website, or call to book and mention the Grondin/Grano Wedding">
+                            <span>15% Off Discount Available</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="hotelCard">
+                        <!-- 15% OFF our Best Available rate -->
+                        <h3 class="hotelCard__name">Best Western - Mirarmar</h3>
+                        <h4 class="hotelCard__distance">6 mins (1.7 miles) from Reception</h4>
+                        <h4 class="hotelCard__rating">
+                            <span class="hotelCard__rating-text">3 Star Hotel</span>
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        </h4>
+                        <div class="hotelCard__address">
+                            <a target="map" href="https://www.google.com/maps/place/9310+Kearny+Mesa+Rd,+San+Diego,+CA+92126/@32.8922407,-117.1210552,17z/data=!3m1!4b1!4m2!3m1!1s0x80dbf92cc8e8365d:0x19a5d8e1cd33224">
+                            9310 Kearny Mesa Rd<br>San Diego, CA 92126
+                            </a>
+                        </div>
+                        <div class="hotelCard__phone">
+                            <a href="tel:8585786600">(858) 578-6600</a>
+                        </div>
+                        <div class="hotelCard__link">
+                            <a href="http://www.bestwesternmiramar.com/" target="bestWestern">View Website <span class="glyphicon glyphicon-menu-right"></span></a>
+                        </div>
+                        <div class="hotelCard__discount" data-toggle="tooltip" data-placement="top" title="Call to book and mention the Grondin/Grano Wedding">
+                            <span>15% Off Discount Available</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="hotelCard">
+                        <h3 class="hotelCard__name">Comfort Suites - Miramar</h3>
+                        <h4 class="hotelCard__distance">6 min (1.9 miles) from Reception</h4>
+                        <h4 class="hotelCard__rating">
+                            <span class="hotelCard__rating-text">3 Star Hotel</span>
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        </h4>
+                        <div class="hotelCard__address">
+                            <a target="map" href="https://www.google.com/maps/place/9880+Mira+Mesa+Blvd,+San+Diego,+CA+92131/@32.9177888,-117.1166957,17z/data=!3m1!4b1!4m2!3m1!1s0x80dbf9175ed77103:0x1bdd71609e524aca">
+                            9880 Mira Mesa Blvd<br>San Diego, CA 92131
+                            </a>
+                        </div>
+                        <div class="hotelCard__phone">
+                            <a href="tel:8585302000">(858) 530-2000</a>
+                        </div>
+                        <div class="hotelCard__link">
+                            <a href="https://www.choicehotels.com/california/san-diego/comfort-suites-hotels/ca122" target="comfortSuites">View Website <span class="glyphicon glyphicon-menu-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="hotelCard">
+                        <h3 class="hotelCard__name">Holiday Inn Express</h3>
+                        <h4 class="hotelCard__distance">5 mins (1.9 miles) from Reception</h4>
+                        <h4 class="hotelCard__rating">
+                            <span class="hotelCard__rating-text">3 Star Hotel</span>
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        </h4>
+
+                        <div class="hotelCard__address">
+                            <a target="map" href="https://www.google.ca/maps/place/9888+Mira+Mesa+Blvd,+San+Diego,+CA+92131,+USA/@32.9176994,-117.1161283,17z/data=!3m1!4b1!4m2!3m1!1s0x80dbf91742b16733:0x9b4ae330ec64ce3d?hl=en">
+                            9888 Mira Mesa Blvd<br>San Diego, CA 92131
+                            </a>
+                        </div>
+                        <div class="hotelCard__phone">
+                            <a href="tel:8586355566">(858) 635-5566</a>
+                        </div>
+                        <div class="hotelCard__link">
+                            <a href="http://www.ihg.com/holidayinnexpress/hotels/us/en/san-diego/sansc/hoteldetail" target="holidayInnExpress">View Website <span class="glyphicon glyphicon-menu-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-sm-4">
+                    <div class="hotelCard">
+                        <h3 class="hotelCard__name">Quality Inn - Mirarmar</h3>
+                        <h4 class="hotelCard__distance">5 mins (1.7 miles) from Reception</h4>
+                        <h4 class="hotelCard__rating">
+                            <span class="hotelCard__rating-text">2 Star Hotel</span>
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        </h4>
+                        <div class="hotelCard__address">
+                            <a target="map" href="https://www.google.com/maps/place/9350+Kearny+Mesa+Rd,+San+Diego,+CA+92126/@32.8927116,-117.1212344,17z/data=!3m1!4b1!4m2!3m1!1s0x80dbf92c8e2ae4bd:0x8fa6dc258d2272b5">
+                            9350 Kearny Mesa Rd<br>San Diego, CA 92126
+                            </a>
+                        </div>
+                        <div class="hotelCard__phone">
+                            <a href="tel:8585784350">(858) 578-4350</a>
+                        </div>
+                        <div class="hotelCard__link">
+                            <a href="https://www.choicehotels.com/california/san-diego/quality-inn-hotels/cac37?source=gglocalai1" target="qualityInn">View Website <span class="glyphicon glyphicon-menu-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="hotelCard">
+                        <h3 class="hotelCard__name">Spring Hill Suites</h3>
+                        <h4 class="hotelCard__distance">9 mins (4 miles) from Reception</h4>
+                        <h4 class="hotelCard__rating">
+                            <span class="hotelCard__rating-text">2 Star Hotel</span>
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        </h4>
+                        <div class="hotelCard__address">
+                            <a target="map" href="https://www.google.com/maps/place/12032+Scripps+Highlands+Dr,+San+Diego,+CA+92131/@32.9376194,-117.1114928,17z/data=!3m1!4b1!4m2!3m1!1s0x80dbf9a732526e13:0x5de2be99903a6a43">
+                            12032 Scripps Highlands Dr<br>San Diego, CA 92131
+                            </a>
+                        </div>
+                        <div class="hotelCard__phone">
+                            <a href="tel:8586355723">(858) 635-5723</a>
+                        </div>
+                        <div class="hotelCard__link">
+                            <a href="http://www.marriott.com/hotels/hotel-photos/sansh-springhill-suites-san-diego-rancho-bernardo-scripps-poway/" target="marriott">View Website <span class="glyphicon glyphicon-menu-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- data-0-top-top="background-attachment:initial;" data-0-bottom-bottom="background-attachment:fixed;" -->
+    <!-- data-0-top-top="background-attachment:initial;    data-100-bottom-bottom=background-attachment:fixed;-->
+    <!-- <section class="parallax" data-0-top-top="background-size:120%;background-position:50% top;" data-100-bottom-bottom="background-size:100%;background-position:0% top;">
         <div class="parallax__buttonWrapper" data-45p-top-top="opacity:0; top:-200px;" data-25p-top-top="opacity:1;top:0px;">
-        <!-- data-0-top-top="position:static;" data--100-top-top="position:fixed;" -->
-        <!-- data-20p-top-top="opacity:0;" data--0p-top-top="opacity:1;" -->
             <div class="btn-parallax-container"><a  href="/engagement-photos" class="btn btn-parallax btn-ghost" >View All of Our Engagement Photos <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></div>
+        </div>
+    </section> -->
+
+    <section class="registry">
+        <div class="container">
+            <h2>Registry</h2>
+            <div class="registry__main">
+                <!-- <p>In lieu of a traditional registry, we decided to set up a honeymoon fund.  We will be traveling to South America shortly after the wedding! Thank you so much for gifting us an adventure together!</p>
+                <p>We plan to travel to many more places in the future, and this will be the perfect way to begin our adventures together!</p> -->
+
+
+                <p>In lieu of a traditional registry, we decided to set up a honeymoon fund.  As a married couple, we plan on traveling a lot and hope to eventually see most of the world.
+                <p>To begin our adventure, we will be visiting South America in July! Thank you so much for gifting us an unforgettable trip!</p>
+
+                <a class="btn btn-gray" href="//zola.com/registry/collection-item/5689dc91e4b077312f71d33e" target="zola">Go To Our Honeymoon Fund <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+        </div>
+    </section>
+
+    <section class="photos">
+        <div data-900-top-top="margin-top:0%;" data-100-bottom-bottom="margin-top:-15%" >
+            <div class="btn-photos-wrapper"><a  href="/engagement-photos" class="btn btn-parallax btn-ghost" >View All of Our Engagement Photos <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></div>
+            <div class="photos__grid"><img src="/img/engagement-photos/thumbs/01.jpg" data-number="01" class="img-responsive thumb"></div>
+            <div class="photos__grid"><img src="/img/engagement-photos/thumbs/02.jpg" data-number="02" class="img-responsive thumb"></div>
+            <div class="photos__grid"><img src="/img/engagement-photos/thumbs/03.jpg" data-number="03" class="img-responsive thumb"></div>
+            <div class="photos__grid"><img src="/img/engagement-photos/thumbs/04.jpg" data-number="04" class="img-responsive thumb"></div>
+            <div class="photos__grid"><img src="/img/engagement-photos/thumbs/05.jpg" data-number="05" class="img-responsive thumb"></div>
+           <!--  <div class="photos__grid">View all of our engagement photos</div> -->
+            <div class="photos__grid"><img src="/img/engagement-photos/thumbs/06.jpg" data-number="06" class="img-responsive thumb"></div>
+            <div class="photos__grid"><img src="/img/engagement-photos/thumbs/07.jpg" data-number="07" class="img-responsive thumb"></div>
+            <div class="photos__grid"><img src="/img/engagement-photos/thumbs/08.jpg" data-number="08" class="img-responsive thumb"></div>
+            <div class="photos__grid"><img src="/img/engagement-photos/thumbs/09.jpg" data-number="09" class="img-responsive thumb"></div>
+           <div class="photos__grid"><img src="/img/engagement-photos/thumbs/10.jpg" data-number="10" class="img-responsive thumb"></div>
+            <div class="photos__grid"><img src="/img/engagement-photos/thumbs/11.jpg" data-number="11" class="img-responsive thumb"></div>
+            <div class="photos__grid"><img src="/img/engagement-photos/thumbs/12.jpg" data-number="12" class="img-responsive thumb"></div>
+            <div class="photos__grid"><img src="/img/engagement-photos/thumbs/13.jpg" data-number="13" class="img-responsive thumb"></div>
+            <div class="photos__grid"><img src="/img/engagement-photos/thumbs/14.jpg" data-number="14" class="img-responsive thumb"></div>
+            <div class="photos__grid"><img src="/img/engagement-photos/thumbs/15.jpg" data-number="15" class="img-responsive thumb"></div>
+<!--
+            <div class="photos__grid"><img src="/img/engagement-photos/thumbs/17.jpg" data-number="17" class="img-responsive thumb"></div>
+            <div class="photos__grid"><img src="/img/engagement-photos/thumbs/18.jpg" data-number="18" class="img-responsive thumb"></div>
+            <div class="photos__grid"><img src="/img/engagement-photos/thumbs/19.jpg" data-number="19" class="img-responsive thumb"></div>
+            <div class="photos__grid"><img src="/img/engagement-photos/thumbs/20.jpg" data-number="20" class="img-responsive thumb"></div>
+            <div class="photos__grid"><img src="/img/engagement-photos/thumbs/21.jpg" data-number="21" class="img-responsive thumb"></div>
+            <div class="photos__grid"><img src="/img/engagement-photos/thumbs/22.jpg" data-number="22" class="img-responsive thumb"></div>
+
+            <div class="photos__grid"><img src="/img/engagement-photos/thumbs/24.jpg" data-number="24" class="img-responsive thumb"></div>
+            <div class="photos__grid"><img src="/img/engagement-photos/thumbs/25.jpg" data-number="25" class="img-responsive thumb"></div>
+            -->
         </div>
     </section>
 
@@ -191,14 +460,28 @@
     <section class="outro">
         <div class="outro-a">
             <div class="container">
-                <h4>More <br>information<br>to come</h4>
+                <h4>Contact Us<br>If You Have<br>Questions</h4>
                 <img src="../img/arrow1.svg" class="arrow1" data-300-bottom-top="top:-50px;right:-115px;" data--100-bottom-top="top:220px;right: 570px;">
                 <img src="../img/arrow2.svg" class="arrow2" data-200-bottom-top="top:950px;left:-115px;" data--200-bottom-top="top:425px;left:595px;">
+                 <ul class="list-inline list-unstyled">
+                    <li>
+                      <strong>Caroline &amp; Anthony Grondin:</strong><br>
+                      <a href="mailto:agrondin@hotmail.com">agrondin@hotmail.com</a>
+                    </li>
+                    <li>
+                      <strong>Sigournee Grondin:</strong><br>
+                      <a href="mailto:sigourneegrondin@gmail.com">sigourneegrondin@gmail.com</a>
+                    </li>
+                    <li>
+                      <strong>Andrew Grano:</strong><br>
+                      <a href="mailto:andrewgrano@gmail.com">andrewgrano@gmail.com</a>
+                    </p>
+                </ul>
             </div>
         </div>
         <div class="outro-b" data-300-bottom-top="top:200px;" data--200-bottom-top="top:-50px;">
             <!-- <img src="../img/banner-heart.svg"> -->
-            <h4>Formal Invitation to Follow</h4>
+            <h4 id="outro__headline">Can't Wait to See You There!</h4>
         </div>
         <!-- <div class="contactUs"><span>Questions? Contact Us Here.</span></div> -->
     </section>
@@ -207,8 +490,11 @@
     <% include partials/modal-contact %>
     <% include partials/footer %>
     <script src="../js/skrollr.min.js"></script>
+    <script src="../js/jquery.arctext.js"></script>
     <script>
     $(function () {
+
+        $('[data-toggle="tooltip"]').tooltip()
 
         $('#hero__Carousel').carousel({
             interval: 3000,
@@ -235,6 +521,55 @@
                 }
             });
         }
+
+
+
+        var DistanceOfNavFromTop = $('.navigation').offset().top;
+        $(window).scroll(function() {
+            if( $(window).scrollTop() >= DistanceOfNavFromTop ) {
+                $('.navigation').addClass('navigation--sticky');
+            } else {
+                $('.navigation').removeClass('navigation--sticky');
+            }
+        });
+
+
+
+        function stickyHeader() {
+            var siteheader = $('.navigation:not(.siteHeader--sticky)').outerHeight(true,true);
+            $(window).scroll(function() {
+                // if ( $(window).width() > 991 ) {
+                    if ( $(window).scrollTop() >= siteheader) {
+                        $(".siteHeader--sticky").stop(true,false).fadeIn('fast');
+                    } else {
+                        $(".siteHeader--sticky").stop(true,false).fadeOut('fast');
+                    }
+                // } else {
+                //     $(".site-header-sticky").hide();
+                // }
+            });
+        }
+
+        stickyHeader();
+        var id;
+        $(window).resize(function() {
+            if ( $(window).width() < 991 ) {
+                $(".site-header-sticky").hide();
+            }
+            clearTimeout(id);
+            id = setTimeout(doneResizing, 500);
+        });
+
+        function doneResizing(){
+            stickyHeader();
+        }
+
+
+
+        $('#hero__headline').arctext({radius: 1000})
+        $('#outro__headline').arctext({radius: 2000})
+
+
     });
     </script>
 </body>

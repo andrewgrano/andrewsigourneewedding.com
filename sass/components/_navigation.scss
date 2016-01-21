@@ -1,0 +1,26 @@
+.navigation {
+    background: $champagne;
+    border-bottom: 1px solid $gray;
+    margin: 0;
+
+    ul {
+        width: 100%;
+
+        li {
+
+            a {
+                font-size: 28px;
+                padding: 20px 22px;
+                color: $black;
+            }
+        }
+    }
+
+    &.navigation--sticky {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9990;
+    }
+}
