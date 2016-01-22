@@ -2,6 +2,71 @@
     background: $champagne;
     border-bottom: 1px solid $gray;
     margin: 0;
+    @include transition(all 0.2s linear);
+    z-index: 999;
+
+    &.navbar {
+        @media (max-width: $screen-sm-min) {
+            min-height: 20px;
+        }
+    }
+
+    &__menuText {
+        position: absolute;
+        right: 57px;
+        top: 6px;
+        opacity: 1;
+        @include transition(opacity 0.2s linear);
+    }
+
+    .navbar-toggle {
+        border: 0 none;
+        margin-right: 0;
+        margin-top: 0;
+
+        @media (max-width: $screen-sm-min) {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: $screen-xs-min) {
+            padding: 0;
+            margin-bottom: 0;
+        }
+
+        .icon-bar {
+            background: $black;
+            position: relative;
+            @include transition(all 0.2s linear);
+
+            &.top-bar {
+                transform: rotate(45deg);
+                transform-origin: 10% 10%;
+
+            }
+            &.middle-bar {
+                opacity: 0;
+            }
+            &.bottom-bar {
+                transform: rotate(-45deg);
+                transform-origin: 10% 90%;
+
+            }
+        }
+
+        &.collapsed {
+
+            .top-bar {
+                transform: rotate(0);
+            }
+            .middle-bar {
+                opacity: 1;
+            }
+            .bottom-bar {
+                transform: rotate(0);
+            }
+        }
+
+    }
 
     ul {
         width: 100%;
@@ -12,6 +77,16 @@
                 font-size: 28px;
                 padding: 20px 22px;
                 color: $black;
+
+                @media screen and (max-width: $screen-md-max) {
+                    font-size: 22px;
+                    padding: 20px 19px;
+                }
+
+                @media screen and (max-width: $screen-sm-max) {
+                    font-size: 19px;
+                    padding: 15px 10px;
+                }
             }
         }
     }
@@ -22,5 +97,25 @@
         top: 0;
         left: 0;
         z-index: 9990;
+
+        .navigation__menuText {
+            opacity: 0;
+        }
+
+        @media screen and (max-width: $screen-sm-max) {
+            position: fixed;
+            right: 0;
+            left: inherit;
+            display: inline-block;
+            width: auto;
+            border: 0;
+            background: none;
+        }
     }
+
+    &.navigation--isOpen {
+        width: 100%;
+        background: $champagne;
+    }
+
 }

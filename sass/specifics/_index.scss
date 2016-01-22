@@ -172,6 +172,20 @@ html {
 
         &.navigation--sticky {
             position: fixed;
+
+            @media screen and (max-width: $screen-sm-max) {
+                position: fixed;
+                right: 0;
+                left: inherit;
+                display: inline-block;
+                width: auto;
+                border: 0;
+            }
+        }
+
+        &.navigation--isOpen {
+            width: 100%;
+            background: $champagne;
         }
     }
 

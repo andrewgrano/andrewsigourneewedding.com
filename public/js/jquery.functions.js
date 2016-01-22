@@ -70,4 +70,15 @@ $(function() {
       e.preventDefault();
     });
 
+
+    $('.navbar-collapse').on('show.bs.collapse', function (e) {
+        //alert('show');
+        $('.navigation').addClass('navigation--isOpen')
+    })
+
+    $('.navbar-collapse').on('hidden.bs.collapse', function (e) {
+        //alert('hide');
+        $('.navigation').removeClass('navigation--isOpen')
+    })
+
 });
