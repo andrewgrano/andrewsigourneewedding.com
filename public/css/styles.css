@@ -8720,7 +8720,7 @@ body {
   transition: all 0.2s linear;
   z-index: 999;
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   /* line 8, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
   .navigation.navbar {
     min-height: 20px;
@@ -8750,14 +8750,7 @@ body {
     margin-bottom: 0;
   }
 }
-@media (max-width: 480px) {
-  /* line 22, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
-  .navigation .navbar-toggle {
-    padding: 0;
-    margin-bottom: 0;
-  }
-}
-/* line 36, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
+/* line 31, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
 .navigation .navbar-toggle .icon-bar {
   background: #000;
   position: relative;
@@ -8767,57 +8760,57 @@ body {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 41, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
+/* line 36, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
 .navigation .navbar-toggle .icon-bar.top-bar {
   transform: rotate(45deg);
   transform-origin: 10% 10%;
 }
-/* line 46, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
+/* line 41, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
 .navigation .navbar-toggle .icon-bar.middle-bar {
   opacity: 0;
 }
-/* line 49, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
+/* line 44, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
 .navigation .navbar-toggle .icon-bar.bottom-bar {
   transform: rotate(-45deg);
   transform-origin: 10% 90%;
 }
-/* line 58, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
+/* line 53, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
 .navigation .navbar-toggle.collapsed .top-bar {
   transform: rotate(0);
 }
-/* line 61, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
+/* line 56, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
 .navigation .navbar-toggle.collapsed .middle-bar {
   opacity: 1;
 }
-/* line 64, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
+/* line 59, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
 .navigation .navbar-toggle.collapsed .bottom-bar {
   transform: rotate(0);
 }
-/* line 71, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
+/* line 66, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
 .navigation ul {
   width: 100%;
 }
-/* line 76, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
+/* line 71, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
 .navigation ul li a {
   font-size: 28px;
   padding: 20px 22px;
   color: #000;
 }
 @media screen and (max-width: 1199px) {
-  /* line 76, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
+  /* line 71, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
   .navigation ul li a {
     font-size: 22px;
     padding: 20px 19px;
   }
 }
 @media screen and (max-width: 991px) {
-  /* line 76, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
+  /* line 71, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
   .navigation ul li a {
     font-size: 19px;
     padding: 15px 10px;
   }
 }
-/* line 94, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
+/* line 89, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
 .navigation.navigation--sticky {
   position: fixed;
   width: 100%;
@@ -8825,12 +8818,8 @@ body {
   left: 0;
   z-index: 9990;
 }
-/* line 101, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
-.navigation.navigation--sticky .navigation__menuText {
-  opacity: 0;
-}
-@media screen and (max-width: 991px) {
-  /* line 94, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
+@media screen and (max-width: 767px) {
+  /* line 89, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
   .navigation.navigation--sticky {
     position: fixed;
     right: 0;
@@ -8841,10 +8830,18 @@ body {
     background: none;
   }
 }
-/* line 116, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
+/* line 106, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
+.navigation.navigation--sticky .navigation__menuText {
+  opacity: 0;
+}
+/* line 111, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
 .navigation.navigation--isOpen {
   width: 100%;
   background: #FDFCF3;
+}
+/* line 115, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/components/_navigation.scss */
+.navigation.navigation--isOpen .navigation__menuText {
+  opacity: 0;
 }
 
 /* line 1, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
@@ -9043,7 +9040,7 @@ html {
 .announce .navigation.navigation--sticky {
   position: fixed;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   /* line 173, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .announce .navigation.navigation--sticky {
     position: fixed;
@@ -9250,116 +9247,140 @@ html {
     margin-bottom: 50px;
   }
 }
-/* line 353, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  /* line 357, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .eventinfoItem--reception {
+    margin-top: 175px;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  /* line 363, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .eventinfoItem--brunch {
+    margin-top: 350px;
+  }
+}
+/* line 369, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .eventinfoItem [class^="eventinfoItem__decor"] {
   position: absolute;
   width: 35px;
   height: 85px;
   bottom: 10px;
 }
-/* line 360, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 376, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .eventinfoItem .eventinfoItem__decor--right {
   right: -50px;
 }
-@media screen and (max-width: 480px) {
-  /* line 360, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+@media screen and (max-width: 1199px) {
+  /* line 376, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .eventinfoItem .eventinfoItem__decor--right {
     right: -30px;
   }
 }
-/* line 368, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+@media screen and (max-width: 480px) {
+  /* line 376, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .eventinfoItem .eventinfoItem__decor--right {
+    right: -30px;
+  }
+}
+/* line 388, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .eventinfoItem .eventinfoItem__decor--left {
   left: -50px;
 }
-@media screen and (max-width: 480px) {
-  /* line 368, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+@media screen and (max-width: 1199px) {
+  /* line 388, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .eventinfoItem .eventinfoItem__decor--left {
     left: -30px;
   }
 }
-/* line 376, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+@media screen and (max-width: 480px) {
+  /* line 388, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .eventinfoItem .eventinfoItem__decor--left {
+    left: -30px;
+  }
+}
+/* line 402, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .eventinfoItem__title {
   font-family: "Patua One", sans-serif;
   font-size: 42px;
   margin: 0 0 5px 0;
 }
 @media screen and (max-width: 991px) {
-  /* line 376, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 402, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .eventinfoItem__title {
     font-size: 36px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 376, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 402, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .eventinfoItem__title {
     font-size: 30px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 376, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 402, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .eventinfoItem__title {
     font-size: 25px;
   }
 }
-/* line 395, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 421, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .eventinfoItem__subtitle {
   font-family: "Patua One", sans-serif;
   font-size: 24px;
   margin: 0 0 15px 0;
 }
 @media screen and (max-width: 991px) {
-  /* line 395, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 421, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .eventinfoItem__subtitle {
     font-size: 22px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 395, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 421, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .eventinfoItem__subtitle {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 395, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 421, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .eventinfoItem__subtitle {
     font-size: 18px;
   }
 }
-/* line 415, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 441, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .eventinfoItem__address {
   font-size: 16px;
   line-height: 1.8;
 }
-/* line 420, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 446, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .eventinfoItem__link {
   cursor: pointer;
   text-decoration: underline;
   color: #333;
   font-size: 16px;
 }
-/* line 427, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 453, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .eventinfoItem__breakerImg {
   width: 150px;
   margin: -15px auto;
 }
-/* line 434, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 460, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .eventinfoItem--callout {
   margin: 50px 0;
   display: block;
   width: 100%;
 }
 @media screen and (max-width: 767px) {
-  /* line 434, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 460, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .eventinfoItem--callout {
     margin: 40px 0;
   }
 }
-/* line 443, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 469, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .eventinfoItem--callout .eventinfoItem__subtitle {
   margin-bottom: 10px;
 }
 
-/* line 449, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 475, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .transportation {
   background: #FFC9B0;
   padding: 100px 0;
@@ -9367,52 +9388,93 @@ html {
   position: relative;
   z-index: 10;
 }
-/* line 456, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+@media screen and (max-width: 767px) {
+  /* line 475, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .transportation {
+    padding: 60px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 475, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .transportation {
+    padding: 45px 0;
+  }
+}
+/* line 492, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .transportation h2 {
   font-family: "Patua One", sans-serif;
   font-size: 42px;
   margin: 0 0 45px 0;
 }
 @media screen and (max-width: 991px) {
-  /* line 456, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 492, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .transportation h2 {
     font-size: 36px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 456, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 492, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .transportation h2 {
     font-size: 30px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 456, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 492, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .transportation h2 {
     font-size: 25px;
   }
 }
-/* line 474, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 510, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .transportation__main {
-  padding: 0 120px;
   font-size: 22px;
 }
-/* line 478, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+@media screen and (max-width: 1199px) {
+  /* line 510, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .transportation__main {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* line 510, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .transportation__main {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 510, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .transportation__main {
+    font-size: 16px;
+  }
+}
+/* line 525, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .transportation__main p {
   margin-bottom: 30px;
 }
-/* line 481, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 528, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .transportation__main p:last-child {
   margin-bottom: 0;
 }
 
-/* line 488, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 535, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .hotels {
   padding: 100px 0;
   background: #CEEEE7;
   position: relative;
   z-index: 10;
 }
-/* line 494, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+@media screen and (max-width: 767px) {
+  /* line 535, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .hotels {
+    padding: 60px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 535, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .hotels {
+    padding: 45px 0;
+  }
+}
+/* line 550, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .hotels h2 {
   font-family: "Patua One", sans-serif;
   font-size: 42px;
@@ -9420,88 +9482,139 @@ html {
   text-align: center;
 }
 @media screen and (max-width: 991px) {
-  /* line 494, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 550, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .hotels h2 {
     font-size: 36px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 494, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 550, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .hotels h2 {
     font-size: 30px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 494, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 550, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .hotels h2 {
     font-size: 25px;
   }
 }
-/* line 513, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 569, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .hotels .hotelCard {
   background: #FDFCF3;
   padding: 30px 20px;
   margin-bottom: 35px;
   position: relative;
 }
-/* line 519, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+@media screen and (max-width: 767px) {
+  /* line 569, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .hotels .hotelCard {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 569, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .hotels .hotelCard {
+    width: 290px;
+  }
+}
+/* line 585, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .hotels .hotelCard__name {
   font-weight: 700;
   margin: 0 0 20px 0;
 }
-/* line 524, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  /* line 585, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .hotels .hotelCard__name {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 585, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .hotels .hotelCard__name {
+    font-size: 21px;
+  }
+}
+/* line 598, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .hotels .hotelCard__distance {
   margin: 0 0 5px 0;
 }
-/* line 528, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  /* line 598, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .hotels .hotelCard__distance {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 598, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .hotels .hotelCard__distance {
+    font-size: 17px;
+  }
+}
+/* line 610, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .hotels .hotelCard__rating {
   margin: 0 0 20px 0;
   font-size: 16px;
 }
-/* line 532, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 614, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .hotels .hotelCard__rating-text {
   margin-right: 5px;
 }
-/* line 536, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 618, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .hotels .hotelCard__rating .glyphicon {
   font-size: 13px;
   position: relative;
   top: -1px;
   color: #FFC9B0;
 }
-/* line 544, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 626, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .hotels .hotelCard__address {
   margin-bottom: 10px;
 }
-/* line 547, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 629, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .hotels .hotelCard__address a {
   color: #000;
 }
-/* line 552, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 634, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .hotels .hotelCard__phone {
   margin-bottom: 15px;
 }
-/* line 555, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 637, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .hotels .hotelCard__phone a {
   color: #000;
 }
-/* line 560, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 642, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .hotels .hotelCard__link {
   display: inline-block;
   border: 1px solid #000;
   padding: 2px 5px;
 }
-/* line 565, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+@media screen and (max-width: 1199px) {
+  /* line 642, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .hotels .hotelCard__link {
+    padding: 5px 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 642, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .hotels .hotelCard__link {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+/* line 656, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .hotels .hotelCard__link .glyphicon {
   font-size: 12px;
   position: relative;
   top: 1px;
 }
-/* line 571, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 662, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .hotels .hotelCard__link a {
   color: #000;
 }
-/* line 579, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 670, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .hotels .hotelCard__discount {
   position: absolute;
   background: #FFC9B0;
@@ -9515,8 +9628,14 @@ html {
   border-radius: 80px;
   line-height: 1.2;
 }
+@media screen and (max-width: 480px) {
+  /* line 670, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .hotels .hotelCard__discount {
+    right: 15px;
+  }
+}
 
-/* line 596, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 691, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .registry {
   background: #FFE3E7;
   padding: 100px 0;
@@ -9524,68 +9643,103 @@ html {
   position: relative;
   z-index: 10;
 }
-/* line 603, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+@media screen and (max-width: 767px) {
+  /* line 691, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .registry {
+    padding: 60px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 691, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .registry {
+    padding: 45px 0;
+  }
+}
+/* line 706, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .registry h2 {
   font-family: "Patua One", sans-serif;
   font-size: 42px;
   margin: 0 0 45px 0;
 }
 @media screen and (max-width: 991px) {
-  /* line 603, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 706, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .registry h2 {
     font-size: 36px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 603, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 706, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .registry h2 {
     font-size: 30px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 603, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 706, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .registry h2 {
     font-size: 25px;
   }
 }
-/* line 621, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 724, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .registry__main {
-  padding: 0 120px;
   font-size: 22px;
 }
-/* line 625, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+@media screen and (max-width: 1199px) {
+  /* line 724, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .registry__main {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* line 724, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .registry__main {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 724, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .registry__main {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 322px) {
+  /* line 724, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .registry__main {
+    padding: 0 5px;
+  }
+}
+/* line 743, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .registry__main p {
   margin-bottom: 30px;
 }
-/* line 628, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 746, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .registry__main p:last-child {
   margin-bottom: 0;
 }
-/* line 634, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 752, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .registry a.btn {
   font-size: 36px;
   margin-top: 25px;
 }
 @media screen and (max-width: 991px) {
-  /* line 634, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 752, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .registry a.btn {
     font-size: 29px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 634, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 752, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .registry a.btn {
     font-size: 24px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 634, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 752, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .registry a.btn {
     font-size: 18px;
   }
 }
 
-/* line 655, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 773, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .parallax {
   background: url(../img/parallax.jpg);
   background-size: 100%;
@@ -9598,30 +9752,30 @@ html {
   z-index: 10;
 }
 @media screen and (max-width: 991px) {
-  /* line 655, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 773, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .parallax {
     height: 422px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 655, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 773, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .parallax {
     height: 303px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 655, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 773, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .parallax {
     height: 205px;
   }
 }
-/* line 694, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 812, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .parallax .parallax__buttonWrapper {
   position: absolute;
   top: 0;
   width: 100%;
 }
-/* line 700, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 818, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .parallax .btn-parallax-container {
   position: absolute;
   top: 220px;
@@ -9629,47 +9783,59 @@ html {
   z-index: 1;
 }
 @media screen and (max-width: 767px) {
-  /* line 700, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 818, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .parallax .btn-parallax-container {
     top: 150px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 700, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 818, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .parallax .btn-parallax-container {
     top: 80px;
   }
 }
-/* line 715, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 833, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .parallax a.btn-parallax {
   font-size: 36px;
 }
 @media screen and (max-width: 991px) {
-  /* line 715, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 833, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .parallax a.btn-parallax {
     font-size: 29px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 715, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 833, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .parallax a.btn-parallax {
     font-size: 24px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 715, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 833, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .parallax a.btn-parallax {
     font-size: 18px;
   }
 }
 
-/* line 733, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 851, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .photos {
   height: 100%;
   overflow: hidden;
   position: relative;
 }
-/* line 738, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+@media screen and (max-width: 767px) {
+  /* line 851, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .photos {
+    height: 427px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 851, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .photos {
+    height: 355px;
+  }
+}
+/* line 864, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .photos .btn-photos-wrapper {
   width: 100%;
   text-align: center;
@@ -9677,11 +9843,43 @@ html {
   top: 40%;
   z-index: 3;
 }
-/* line 745, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+@media screen and (max-width: 991px) {
+  /* line 864, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .photos .btn-photos-wrapper {
+    position: absolute;
+    top: 45%;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 864, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .photos .btn-photos-wrapper {
+    top: 160px;
+  }
+}
+/* line 880, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .photos .btn-ghost {
   font-size: 36px;
 }
-/* line 749, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+@media screen and (max-width: 991px) {
+  /* line 880, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .photos .btn-ghost {
+    font-size: 29px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 880, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .photos .btn-ghost {
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 880, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .photos .btn-ghost {
+    font-size: 18px;
+  }
+}
+/* line 900, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .photos > div {
   display: -webkit-flex;
   display: flex;
@@ -9690,7 +9888,7 @@ html {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-/* line 759, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 910, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .photos__grid {
   -webkit-flex: auto;
   flex: auto;
@@ -9698,7 +9896,7 @@ html {
   position: relative;
   z-index: 1;
 }
-/* line 765, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 916, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .photos__grid:before {
   content: " ";
   position: absolute;
@@ -9719,12 +9917,12 @@ html {
   -webkit-transition-timing-function: linear;
   transition-timing-function: linear;
 }
-/* line 777, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 928, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .photos__grid:hover:before {
   background: transparent;
 }
 
-/* line 802, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 953, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .story {
   background: #FFC9B0;
   position: relative;
@@ -9733,112 +9931,112 @@ html {
   padding: 150px 0;
 }
 @media screen and (max-width: 991px) {
-  /* line 802, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 953, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story {
     padding: 75px 0;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 802, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 953, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story {
     padding: 50px 0;
   }
 }
-/* line 817, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 968, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .story__heading {
   margin: 0;
   font-size: 40px;
   color: #FDFCF3;
 }
 @media screen and (max-width: 991px) {
-  /* line 817, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 968, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story__heading {
     font-size: 32px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 817, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 968, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story__heading {
     font-size: 25px;
   }
 }
-/* line 830, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 981, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .story__heading img {
   width: 350px;
 }
 @media screen and (max-width: 991px) {
-  /* line 830, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 981, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story__heading img {
     width: 300px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 830, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 981, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story__heading img {
     width: 200px;
   }
 }
-/* line 843, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 994, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .story__content {
   margin-top: 75px;
   font-size: 22px;
   padding: 0 5%;
 }
 @media screen and (max-width: 1199px) {
-  /* line 843, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 994, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story__content {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 991px) {
-  /* line 843, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 994, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story__content {
     font-size: 18px;
     margin-top: 50px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 843, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 994, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story__content {
     padding: 0;
     font-size: 16px;
     margin-top: 35px;
   }
 }
-/* line 864, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 1015, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .story__content p {
   margin-bottom: 50px;
 }
 @media screen and (max-width: 991px) {
-  /* line 864, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1015, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story__content p {
     margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 864, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1015, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story__content p {
     margin-bottom: 25px;
   }
 }
-/* line 877, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 1028, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .story__footerImg {
   width: 250px;
 }
 @media screen and (max-width: 991px) {
-  /* line 877, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1028, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story__footerImg {
     width: 200px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 877, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1028, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .story__footerImg {
     width: 150px;
   }
 }
 
-/* line 891, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 1042, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .outro {
   text-align: center;
   background: #CEEEE7;
@@ -9846,7 +10044,7 @@ html {
   position: relative;
   z-index: 10;
 }
-/* line 898, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 1049, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .outro .contactUs {
   position: absolute;
   bottom: 8px;
@@ -9854,162 +10052,181 @@ html {
   width: 100%;
   text-align: center;
 }
-/* line 905, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 1056, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .outro .contactUs span {
   font-size: 16px;
   background: #FDFCF3;
   cursor: pointer;
   padding: 10px 25px 10px 25px;
 }
-/* line 914, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 1065, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .outro .outro-a h4 {
   font-family: "Patua One", sans-serif;
   font-size: 38px;
   padding-top: 275px;
 }
 @media screen and (max-width: 1199px) {
-  /* line 914, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1065, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .outro .outro-a h4 {
     padding-top: 200px;
   }
 }
 @media screen and (max-width: 991px) {
-  /* line 914, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1065, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .outro .outro-a h4 {
     padding-top: 130px;
     font-size: 32px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 914, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1065, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .outro .outro-a h4 {
     font-size: 25px;
     padding-top: 90px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 914, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1065, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .outro .outro-a h4 {
     font-size: 22px;
     padding-top: 75px;
   }
 }
-/* line 939, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 1090, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .outro .outro-a .container {
   height: 750px;
   position: relative;
 }
 @media screen and (max-width: 1199px) {
-  /* line 939, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1090, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .outro .outro-a .container {
-    height: 500px;
+    height: 650px;
   }
 }
 @media screen and (max-width: 991px) {
-  /* line 939, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1090, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .outro .outro-a .container {
     height: 400px;
   }
 }
 @media screen and (max-width: 991px) {
-  /* line 939, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1090, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .outro .outro-a .container {
-    height: 290px;
+    height: 515px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 939, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1090, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .outro .outro-a .container {
-    height: 275px;
+    height: 480px;
   }
 }
-/* line 960, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 1111, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .outro .outro-a ul {
   margin-top: 150px;
   font-size: 18px;
 }
-/* line 964, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+@media screen and (max-width: 1199px) {
+  /* line 1111, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .outro .outro-a ul {
+    margin-top: 125px;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* line 1111, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .outro .outro-a ul {
+    margin-top: 75px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 1123, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .outro .outro-a ul li {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+/* line 1130, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .outro .outro-a ul a {
   color: #000;
   text-decoration: underline;
 }
-/* line 973, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 1139, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .outro .arrow1,
 .outro .arrow2 {
   width: 115px;
   position: absolute;
 }
-/* line 979, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 1145, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .outro .arrow1 {
   top: 220px;
   right: 570px;
 }
 @media screen and (max-width: 1199px) {
-  /* line 979, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1145, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .outro .arrow1 {
     margin-right: -70px;
     margin-top: -75px;
   }
 }
 @media screen and (max-width: 991px) {
-  /* line 979, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1145, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .outro .arrow1 {
     margin-right: -200px;
     margin-top: -125px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 979, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1145, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .outro .arrow1 {
     margin-right: -350px;
     margin-top: -165px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 979, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1145, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .outro .arrow1 {
     margin-right: -440px;
     margin-top: -180px;
   }
 }
-/* line 1005, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 1171, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .outro .arrow2 {
   top: 425px;
   left: 595px;
 }
 @media screen and (max-width: 1199px) {
-  /* line 1005, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1171, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .outro .arrow2 {
     margin-left: -70px;
     margin-top: -75px;
   }
 }
 @media screen and (max-width: 991px) {
-  /* line 1005, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1171, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .outro .arrow2 {
     margin-left: -200px;
     margin-top: -185px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 1005, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1171, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .outro .arrow2 {
     margin-left: -375px;
     margin-top: -245px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 1005, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1171, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .outro .arrow2 {
     margin-left: -455px;
     margin-top: -270px;
   }
 }
-/* line 1032, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 1198, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .outro .outro-b {
   position: relative;
 }
-/* line 1035, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+/* line 1201, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
 .outro .outro-b h4 {
   font-family: "Patua One", sans-serif;
   font-size: 38px;
@@ -10020,51 +10237,61 @@ html {
   padding-top: 43px;
 }
 @media screen and (max-width: 991px) {
-  /* line 1035, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1201, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .outro .outro-b h4 {
     font-size: 32px;
     background-size: 745px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 1035, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1201, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .outro .outro-b h4 {
     font-size: 25px;
     padding-top: 29px;
-    padding-bottom: 195px;
+    padding-bottom: 100px;
     background-size: 496px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 1035, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1201, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .outro .outro-b h4 {
     background: url(../img/banner-heart-mobile.svg) no-repeat center top;
     background-size: 320px;
     padding-top: 38px;
     line-height: 1;
-    font-size: 22px;
+    font-size: 20px;
     width: 320px;
     padding-left: 65px;
     padding-right: 65px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 1035, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1201, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   .outro .outro-b h4 {
     padding-bottom: 100px;
+  }
+  /* line 1236, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  .outro .outro-b h4 .char23,
+  .outro .outro-b h4 .char24,
+  .outro .outro-b h4 .char25,
+  .outro .outro-b h4 .char26,
+  .outro .outro-b h4 .char27,
+  .outro .outro-b h4 .char28 {
+    transform: none !important;
+    padding-top: 3px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  /* line 1076, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1252, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   #modal-hotelinfo ol {
     padding-left: 20px;
   }
-  /* line 1080, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1256, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   #modal-hotelinfo h3 {
     font-size: 18px;
   }
-  /* line 1084, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
+  /* line 1260, /Applications/railo/webapps/ROOT/andrewsigourneewedding.com/sass/specifics/_index.scss */
   #modal-hotelinfo h4 {
     font-size: 16px;
   }

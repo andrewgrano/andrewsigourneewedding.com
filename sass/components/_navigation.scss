@@ -6,7 +6,7 @@
     z-index: 999;
 
     &.navbar {
-        @media (max-width: $screen-sm-min) {
+        @media (max-width: $screen-xs-min) {
             min-height: 20px;
         }
     }
@@ -25,11 +25,6 @@
         margin-top: 0;
 
         @media (max-width: $screen-sm-min) {
-            margin-bottom: 0;
-        }
-
-        @media (max-width: $screen-xs-min) {
-            padding: 0;
             margin-bottom: 0;
         }
 
@@ -98,11 +93,7 @@
         left: 0;
         z-index: 9990;
 
-        .navigation__menuText {
-            opacity: 0;
-        }
-
-        @media screen and (max-width: $screen-sm-max) {
+        @media screen and (max-width: $screen-xs-max) {
             position: fixed;
             right: 0;
             left: inherit;
@@ -111,11 +102,19 @@
             border: 0;
             background: none;
         }
+
+        .navigation__menuText {
+            opacity: 0;
+        }
     }
 
     &.navigation--isOpen {
         width: 100%;
         background: $champagne;
+
+        .navigation__menuText {
+            opacity: 0;
+        }
     }
 
 }

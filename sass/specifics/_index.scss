@@ -173,7 +173,7 @@ html {
         &.navigation--sticky {
             position: fixed;
 
-            @media screen and (max-width: $screen-sm-max) {
+            @media screen and (max-width: $screen-xs-max) {
                 position: fixed;
                 right: 0;
                 left: inherit;
@@ -350,6 +350,22 @@ html {
             margin-bottom: 50px;
         }
 
+        &--ceremony {
+
+        }
+
+        &--reception {
+            @media screen and (max-width: $screen-sm-max) and (min-width: $screen-sm-min){
+                margin-top: 175px;
+            }
+        }
+
+        &--brunch {
+            @media screen and (max-width: $screen-sm-max) and (min-width: $screen-sm-min){
+                margin-top: 350px;
+            }
+        }
+
         [class^="eventinfoItem__decor"] {
             position: absolute;
             width: 35px;
@@ -360,6 +376,10 @@ html {
         .eventinfoItem__decor--right {
             right: -50px;
 
+            @media screen and (max-width: $screen-md-max) {
+                right: -30px;
+            }
+
             @media screen and (max-width: $screen-xs-min) {
                 right: -30px;
             }
@@ -367,6 +387,12 @@ html {
 
         .eventinfoItem__decor--left {
             left: -50px;
+
+
+            @media screen and (max-width: $screen-md-max) {
+                left: -30px;
+            }
+
 
             @media screen and (max-width: $screen-xs-min) {
                 left: -30px;
@@ -453,6 +479,16 @@ html {
     position: relative;
     z-index: 10;
 
+
+
+    @media screen and (max-width: $screen-xs-max) {
+        padding: 60px 0;
+    }
+
+    @media screen and (max-width: $screen-xs-min) {
+        padding: 45px 0;
+    }
+
     h2 {
         font-family: $font-display;
         font-size: 42px;
@@ -472,8 +508,19 @@ html {
     }
 
     &__main {
-        padding: 0 120px;
         font-size: 22px;
+
+        @media screen and (max-width: $screen-md-max) {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: $screen-sm-max) {
+            font-size: 18px;
+        }
+
+        @media screen and (max-width: $screen-xs-max) {
+            font-size: 16px;
+        }
 
         p {
             margin-bottom: 30px;
@@ -490,6 +537,15 @@ html {
     background: $mint;
     position: relative;
     z-index: 10;
+
+    @media screen and (max-width: $screen-xs-max) {
+        padding: 60px 0;
+    }
+
+    @media screen and (max-width: $screen-xs-min) {
+        padding: 45px 0;
+    }
+
 
     h2 {
         font-family: $font-display;
@@ -516,13 +572,39 @@ html {
         margin-bottom: 35px;
         position: relative;
 
+        @media screen and (max-width: $screen-xs-max) {
+            width: 320px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media screen and (max-width: $screen-xs-min) {
+            width: 290px;
+        }
+
         &__name {
             font-weight: 700;
             margin: 0 0 20px 0;
+
+            @media screen and (max-width: $screen-md-max) and (min-width: $screen-md-min ) {
+                font-size: 22px;
+            }
+
+            @media screen and (max-width: $screen-xs-min) {
+                font-size: 21px;
+            }
         }
 
         &__distance {
             margin: 0 0 5px 0;
+
+            @media screen and (max-width: $screen-md-max) and (min-width: $screen-md-min ) {
+                font-size: 17px;
+            }
+
+            @media screen and (max-width: $screen-xs-min) {
+                font-size: 17px;
+            }
         }
 
         &__rating {
@@ -562,6 +644,15 @@ html {
             border: 1px solid $black;
             padding: 2px 5px;
 
+            @media screen and (max-width: $screen-md-max) {
+                padding: 5px 15px
+            }
+
+            @media screen and (max-width: $screen-xs-max) {
+                font-size: 16px;
+                margin-top: 10px;
+            }
+
             .glyphicon {
                 font-size: 12px;
                 position: relative;
@@ -588,6 +679,10 @@ html {
             padding: 20px 10px;
             border-radius: 80px;
             line-height: 1.2;
+
+            @media screen and (max-width: $screen-xs-min) {
+                right: 15px;
+            }
         }
     }
 }
@@ -599,6 +694,14 @@ html {
     text-align: center;
     position: relative;
     z-index: 10;
+
+    @media screen and (max-width: $screen-xs-max) {
+        padding: 60px 0;
+    }
+
+    @media screen and (max-width: $screen-xs-min) {
+        padding: 45px 0;
+    }
 
     h2 {
         font-family: $font-display;
@@ -619,8 +722,23 @@ html {
     }
 
     &__main {
-        padding: 0 120px;
         font-size: 22px;
+
+        @media screen and (max-width: $screen-md-max) {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: $screen-sm-max) {
+            font-size: 18px;
+        }
+
+        @media screen and (max-width: $screen-xs-max) {
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 322px) {
+            padding: 0 5px;
+        }
 
         p {
             margin-bottom: 30px;
@@ -735,15 +853,48 @@ html {
     overflow: hidden;
     position: relative;
 
+    @media screen and (max-width: $screen-xs-max) {
+        height: 427px;
+    }
+
+    @media screen and (max-width: $screen-xs-min) {
+        height: 355px;
+    }
+
     .btn-photos-wrapper {
         width: 100%;
         text-align: center;
         position: fixed;
         top: 40%;
         z-index: 3;
+
+        @media screen and (max-width: $screen-sm-max) {
+            position: absolute;
+            top: 45%;
+        }
+
+        @media screen and (max-width: $screen-xs-max) {
+            top: 160px;
+        }
     }
     .btn-ghost {
         font-size: 36px;
+
+        @media screen and (max-width: $screen-sm-max) {
+            font-size: 29px;
+        }
+
+        @media screen and (max-width: $screen-xs-max) {
+            font-size: 24px;
+            background: rgba(0,0,0,0.5);
+        }
+
+
+        @media screen and (max-width: $screen-xs-min) {
+            font-size: 18px;
+        }
+
+
     }
 
     > div {
@@ -941,7 +1092,7 @@ html {
             position: relative;
 
             @media screen and (max-width: $screen-md-max) {
-                height: 500px;
+                height: 650px;
             }
 
             @media screen and (max-width: $screen-sm-max) {
@@ -949,17 +1100,32 @@ html {
             }
 
             @media screen and (max-width: $screen-sm-max) {
-                height: 290px;
+                height: 515px;
             }
 
             @media screen and (max-width: $screen-xs-min) {
-                height: 275px;
+                height: 480px;
             }
         }
 
         ul {
             margin-top: 150px;
             font-size: 18px;
+
+            @media screen and (max-width: $screen-md-max) {
+                margin-top: 125px;
+            }
+
+            @media screen and (max-width: $screen-sm-max) {
+                margin-top: 75px;
+            }
+
+            li {
+                @media screen and (max-width: $screen-xs-max) {
+                    display: block;
+                    margin-bottom: 30px;
+                }
+            }
 
             a {
                 color: $black;
@@ -1049,7 +1215,7 @@ html {
             @media screen and (max-width: $screen-xs-max) {
                 font-size: 25px;
                 padding-top: 29px;
-                padding-bottom: 195px;
+                padding-bottom: 100px;
                 background-size: 496px;
             }
 
@@ -1058,7 +1224,7 @@ html {
                 background-size: 320px;
                 padding-top: 38px;
                 line-height: 1;
-                font-size: 22px;
+                font-size: 20px;
                 width: 320px;
                 padding-left: 65px;
                 padding-right: 65px;
@@ -1066,6 +1232,16 @@ html {
 
             @media screen and (max-width: $screen-xs-min) {
                 padding-bottom: 100px;
+
+                .char23,
+                .char24,
+                .char25,
+                .char26,
+                .char27,
+                .char28 {
+                    transform: none !important;
+                    padding-top: 3px;
+                }
             }
         }
     }
