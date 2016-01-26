@@ -36,37 +36,37 @@ $(function() {
 
 
     $('.goTo-eventinfo').click(function(e) {
-      $("html, body").animate({ scrollTop: $('#eventinfo').offset().top -62 }, 1000);
+      $("html, body").animate({ scrollTop: $('#eventinfo').offset().top -60 }, 1000);
       e.preventDefault();
     });
 
     $('.goTo-transportation').click(function(e) {
-      $("html, body").animate({ scrollTop: $('#transportation').offset().top -62 }, 1000);
+      $("html, body").animate({ scrollTop: $('#transportation').offset().top -60 }, 1000);
       e.preventDefault();
     });
 
     $('.goTo-hotels').click(function(e) {
-      $("html, body").animate({ scrollTop: $('#hotels').offset().top -62 }, 1000);
+      $("html, body").animate({ scrollTop: $('#hotels').offset().top -60 }, 1000);
       e.preventDefault();
     });
 
     $('.goTo-registry').click(function(e) {
-      $("html, body").animate({ scrollTop: $('#registry').offset().top -62 }, 1000);
+      $("html, body").animate({ scrollTop: $('#registry').offset().top -60 }, 1000);
       e.preventDefault();
     });
 
     $('.goTo-photos').click(function(e) {
-      $("html, body").animate({ scrollTop: $('#photos').offset().top -62 }, 1000);
+      $("html, body").animate({ scrollTop: $('#photos').offset().top -60 }, 1000);
       e.preventDefault();
     });
 
     $('.goTo-story').click(function(e) {
-      $("html, body").animate({ scrollTop: $('#story').offset().top -62 }, 1000);
+      $("html, body").animate({ scrollTop: $('#story').offset().top -60 }, 1000);
       e.preventDefault();
     });
 
     $('.goTo-contact').click(function(e) {
-      $("html, body").animate({ scrollTop: $('#outro').offset().top -62 }, 1000);
+      $("html, body").animate({ scrollTop: $('#outro').offset().top -60 }, 1000);
       e.preventDefault();
     });
 

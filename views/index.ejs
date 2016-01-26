@@ -15,6 +15,7 @@
         <div class="hero__callout">
              <h1 id="hero__headline">We're Getting Married!</h1>
         </div>
+        <img src="/img/engagement-photos/thumbs/17.jpg" class="heroMobileImg img-responsive" alt="Engagement Photo of Andrew and Sigournee in Venice">
         <div id="hero__Carousel" class="hero__Carousel carousel carousel-fade slide" data-ride="carousel">
             <!-- Indicators -->
            <!--  <ol class="carousel-indicators">
@@ -75,13 +76,14 @@
 
                 <div class="collapse navbar-collapse" id="nav">
                     <ul class="nav navbar-nav">
-                        <li><a href="" class="goTo-eventinfo">Event Info</a></li>
-                        <li><a href="" class="goTo-transportation">Transportation</a></li>
-                        <li><a href="" class="goTo-hotels">Hotels</a></li>
-                        <li><a href="" class="goTo-registry">Registry</a></li>
-                        <li><a href="" class="goTo-story">Our Story</a></li>
-                        <li><a href="" class="goTo-photos">Photos</a></li>
-                        <li><a href="" class="goTo-contact">Contact</a></li>
+                        <li class="navItem--announce hidden"><a href="#announce"></a></li>
+                        <li class="navItem--eventinfo"><a href="#eventinfo" class="goTo-eventinfo">Event Info</a></li>
+                        <li class="navItem--transportation"><a href="#transportation" class="goTo-transportation">Transportation</a></li>
+                        <li class="navItem--hotels"><a href="#hotels" class="goTo-hotels">Hotels</a></li>
+                        <li class="navItem--registry"><a href="#registry" class="goTo-registry">Registry</a></li>
+                        <li class="navItem--photos"><a href="#photos" class="goTo-photos">Photos</a></li>
+                        <li class="navItem--story"><a href="#story" class="goTo-story">Our Story</a></li>
+                        <li class="navItem--outro"><a href="#outro" class="goTo-contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -211,7 +213,7 @@
                 <div class="col-md-10 col-md-offset-1">
                     <div class="transportation__main">
                         <p>We want all of our guests to enjoy the celebration and get home safely at the end of the night!</p>
-                        <p>Following the reception, guests can take a free ride home using Uber. We will provide a promo code that you can enter in the app to receieve a ride on us.</p>
+                        <p>Following the reception, guests can take a free ride home using Uber. We will provide a promo code that you can enter in the app to receive a ride on us.</p>
                         <p>The next day, from 11:00 AM - 2:00 PM, use the promo code again to get a ride back to the Grondin Household.  <!-- Enjoy brunch and pick up your car. --></p>
                         <p>Check back closer to the date for the promo code and more details.</p>
                     </div>
@@ -490,6 +492,7 @@
             <h4 id="outro__headline">Can't Wait to See You There!</h4>
         </div>
         <!-- <div class="contactUs"><span>Questions? Contact Us Here.</span></div> -->
+        <div class="copyright"><span>&copy; Copyright 2016. Website by <a href="http://www.andrewgrano.com/" target="andrewgrano">Andrew Grano</a>.</span></div>
     </section>
 
     <% include partials/modal-hotelinfo %>
@@ -574,6 +577,37 @@
 
         $('#hero__headline').arctext({radius: 1000})
         $('#outro__headline').arctext({radius: 2000})
+
+        $('body').scrollspy({ target: '#nav', offset: 62 })
+
+        $('#nav').on('activate.bs.scrollspy', function () {
+            if( $('.navItem--eventinfo').hasClass('active') ) {
+                $('.navigation').removeClass('isActive--transportation isActive--hotels isActive--registry isActive--photos isActive--story isActive--outro isActive--announce').addClass('isActive--eventinfo')
+            } else if ( $('.navItem--transportation').hasClass('active') ) {
+                $('.navigation').removeClass('isActive--eventinfo isActive--hotels isActive--registry isActive--photos isActive--story isActive--outro isActive--announce').addClass('isActive--transportation')
+            } else if ( $('.navItem--hotels').hasClass('active') ) {
+                $('.navigation').removeClass('isActive--eventinfo isActive--transportation isActive--registry isActive--photos isActive--story isActive--outro isActive--announce').addClass('isActive--hotels')
+            } else if ( $('.navItem--registry').hasClass('active') ) {
+                $('.navigation').removeClass('isActive--eventinfo isActive--transportation isActive--hotels isActive--photos isActive--story isActive--outro isActive--announce').addClass('isActive--registry')
+            }  else if ( $('.navItem--photos').hasClass('active') ) {
+                $('.navigation').removeClass('isActive--eventinfo isActive--transportation isActive--hotels isActive--registry isActive--story isActive--outro isActive--announce').addClass('isActive--photos')
+            } else if ( $('.navItem--story').hasClass('active') ) {
+                $('.navigation').removeClass('isActive--eventinfo isActive--transportation isActive--hotels isActive--registry isActive--photos isActive--outro isActive--announce').addClass('isActive--story')
+            } else if ( $('.navItem--outro').hasClass('active') ) {
+                $('.navigation').removeClass('isActive--eventinfo isActive--transportation isActive--hotels isActive--registry isActive--photos isActive--story isActive--announce').addClass('isActive--outro')
+            } else if ( $('.navItem--announce').hasClass('active') ) {
+                $('.navigation').removeClass('isActive--eventinfo isActive--transportation isActive--hotels isActive--registry isActive--photos isActive--story isActive--outro').addClass('isActive--announce')
+            }
+        });
+
+        if ($(window).width() < 767) {
+
+            $('.nav li a').on('click',function(e){
+                setTimeout(function(){
+                    $('#nav').collapse('hide')
+                }, 500);
+            });
+        }
 
 
     });

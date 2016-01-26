@@ -6,6 +6,8 @@
     z-index: 999;
 
     &.navbar {
+        border-top: 0 none;
+
         @media (max-width: $screen-xs-min) {
             min-height: 20px;
         }
@@ -117,4 +119,22 @@
         }
     }
 
+}
+
+.nav > li > a {
+    @include transition-property(background);
+    @include transition-duration(0.4s);
+    @include transition-timing-function(linear);
+}
+
+.nav > li > a:focus {
+    background: none;
+}
+
+.nav > li > a:hover {
+    background: rgba(255,255,255,.5);
+}
+
+.nav > li.active > a {
+    background: rgba(255,255,255,.75);
 }

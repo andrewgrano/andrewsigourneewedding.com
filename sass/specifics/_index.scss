@@ -7,6 +7,20 @@ html {
     position: relative;
     z-index: 10;
 
+    &MobileImg {
+        display: none;
+
+        @media screen and (max-width: $screen-xs-min) {
+            display: block;
+        }
+    }
+
+    &__Carousel {
+        @media screen and (max-width: $screen-xs-min) {
+            display: none;
+        }
+    }
+
     &__callout {
         position: absolute;
         z-index: 3;
@@ -169,6 +183,47 @@ html {
         top: 0;
         left: 0;
         width: 100%;
+        @include transition-property(background);
+        @include transition-duration(0.4s);
+        @include transition-timing-function(linear);
+
+        @media screen and (min-width: $screen-xs-max) {
+            &.isActive--eventinfo {
+                background: $mint;
+            }
+
+            &.isActive--transportation {
+                background: $blush;
+            }
+
+            &.isActive--hotels {
+                background: $peach;
+            }
+
+            &.isActive--registry {
+                background: $mint;
+            }
+
+            &.isActive--story {
+                background: $blush;
+            }
+
+            &.isActive--outro {
+                background: $peach;
+            }
+
+            &.isActive--photos {
+
+                .nav > li > a:hover {
+                    background: #f7f7f7;
+                }
+
+                .nav > li.active > a {
+                    background: #f0f0f0;
+                }
+            }
+        }
+
 
         &.navigation--sticky {
             position: fixed;
@@ -351,18 +406,21 @@ html {
         }
 
         &--ceremony {
-
+            @media screen and (max-width: $screen-sm-max) and (min-width: $screen-sm-min){
+                margin-left: 20px;
+            }
         }
 
         &--reception {
             @media screen and (max-width: $screen-sm-max) and (min-width: $screen-sm-min){
-                margin-top: 175px;
+                margin-top: 170px;
             }
         }
 
         &--brunch {
             @media screen and (max-width: $screen-sm-max) and (min-width: $screen-sm-min){
                 margin-top: 350px;
+                margin-left: -60px;
             }
         }
 
@@ -787,7 +845,7 @@ html {
     // }
 
     @media screen and (max-width: $screen-sm-max) {
-        height: 422px;
+        height: 350px;
     }
 
     @media screen and (max-width: $screen-xs-max) {
@@ -853,6 +911,10 @@ html {
     overflow: hidden;
     position: relative;
 
+    @media screen and (max-width: $screen-sm-max) {
+        height: 682px;
+    }
+
     @media screen and (max-width: $screen-xs-max) {
         height: 427px;
     }
@@ -912,6 +974,12 @@ html {
         width: 33%;
         position: relative;
         z-index: 1;
+
+        @media screen and (min-width: 1500px) {
+            img {
+                width: 100%;
+            }
+        }
 
         &:before{
             content: " ";
@@ -1217,6 +1285,8 @@ html {
                 padding-top: 29px;
                 padding-bottom: 100px;
                 background-size: 496px;
+                margin-left: auto;
+                margin-right: auto;
             }
 
             @media screen and (max-width: $screen-xs-min) {
@@ -1243,6 +1313,25 @@ html {
                     padding-top: 3px;
                 }
             }
+        }
+    }
+
+    .copyright {
+        color: $white;
+        font-size: 12px;
+        position: absolute;
+        bottom: 15px;
+        width: 100%;
+        text-align: center;
+
+        span {
+            background: #bde5dc;
+            padding: 3px 6px;
+        }
+
+        a {
+            color: $white;
+            text-decoration: underline;
         }
     }
 }
